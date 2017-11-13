@@ -7,7 +7,6 @@ public class Language extends AppCompatActivity implements Comparable<Language> 
     String lname;
     ArrayList <String> words;
     ArrayList <String> defs;
-    CheckBox f;
     public Language() {
         this.lname = "";
         this.words = new ArrayList <String>();
@@ -28,10 +27,11 @@ public class Language extends AppCompatActivity implements Comparable<Language> 
         return this.defs;
     }
 
-    public static ArrayList<Language> createInitialBucketList(){ ///????? idk how this is actually supposed to work
+    public static ArrayList<Language> createInitialLanguageList(){ ///????? idk how this is actually supposed to work
         ArrayList<Language> ls = new ArrayList<Language>();
         ls.add(new Language("Spanish"));
         ls.add(new Language("French"));
+        ls.add(new Language("Hindi"));
 
         return ls;
     }
