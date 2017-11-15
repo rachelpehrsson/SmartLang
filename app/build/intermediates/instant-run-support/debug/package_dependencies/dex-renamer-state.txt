@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Tue Nov 14 18:36:32 EST 2017
 file.2=C\:\\Users\\Shivani\\Documents\\cs4720\\final\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_35de5251c1b6a4338f5d46b9ace6f087c7b95c10\\classes.dex
 base.2=C\:\\Users\\Shivani\\Documents\\cs4720\\final\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_35de5251c1b6a4338f5d46b9ace6f087c7b95c10
@@ -44,3 +45,51 @@ file.4=C\:\\Users\\Shivani\\Documents\\cs4720\\final\\app\\build\\intermediates\
 base.4=C\:\\Users\\Shivani\\Documents\\cs4720\\final\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_f70b5fb3a1a17c93c9d6dacb5c49c2f6ae37ee39
 file.3=C\:\\Users\\Shivani\\Documents\\cs4720\\final\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-25.3.1_1760e07b6a394aeeeb1fe5df8658d65732423fb6\\classes.dex
 base.3=C\:\\Users\\Shivani\\Documents\\cs4720\\final\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-25.3.1_1760e07b6a394aeeeb1fe5df8658d65732423fb6
+=======
+#Tue Nov 14 22:59:24 GMT-05:00 2017
+file.2=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_578b23a06aab0167ba348c8964ad1922c7fef72d\\classes.dex
+base.2=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_578b23a06aab0167ba348c8964ad1922c7fef72d
+file.1=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_6e42cf0663e2ff7f13afb1dacd275019630c44c2\\classes.dex
+base.1=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_6e42cf0663e2ff7f13afb1dacd275019630c44c2
+file.0=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_b3f032c6b5baf37142c87ae50d6333e3c2c4669f\\classes.dex
+base.0=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_b3f032c6b5baf37142c87ae50d6333e3c2c4669f
+renamed.9=classes2.dex
+renamed.8=classes11.dex
+renamed.7=classes15.dex
+renamed.6=classes.dex
+renamed.5=classes6.dex
+renamed.4=classes10.dex
+renamed.3=classes12.dex
+renamed.2=classes7.dex
+renamed.1=classes8.dex
+renamed.0=classes13.dex
+renamed.14=classes4.dex
+renamed.13=classes9.dex
+renamed.12=classes14.dex
+renamed.11=classes5.dex
+renamed.10=classes3.dex
+base.14=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_1ea5b0407b0c6e7555a3859be3bb8e7c1cab30fb
+base.13=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_6ee0b4b932616ce0e683a89022596b82820b6bf4
+base.12=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\constraint-layout-solver-1.0.2_28b9280c0a4a550fc2ae97fac0f62b4455dfa779
+base.11=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_2b12cce01ae311aee3a6edb0e8e94fe896217d86
+base.10=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_0add62928a4682facc1661ff96d0959f98f46c4e
+file.14=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_1ea5b0407b0c6e7555a3859be3bb8e7c1cab30fb\\classes.dex
+file.13=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_6ee0b4b932616ce0e683a89022596b82820b6bf4\\classes.dex
+file.12=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\constraint-layout-solver-1.0.2_28b9280c0a4a550fc2ae97fac0f62b4455dfa779\\classes.dex
+file.11=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_2b12cce01ae311aee3a6edb0e8e94fe896217d86\\classes.dex
+file.10=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_0add62928a4682facc1661ff96d0959f98f46c4e\\classes.dex
+file.9=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_04d4081788f331cebf9c9046f585abc60a8472cf\\classes.dex
+base.9=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_04d4081788f331cebf9c9046f585abc60a8472cf
+file.8=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_829f5f14dc29f1ab0b93638c29d8927ee99037e9\\classes.dex
+base.8=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_829f5f14dc29f1ab0b93638c29d8927ee99037e9
+file.7=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-25.3.1_1c0fcf32068e5431071702a60209c4a822cade16\\classes.dex
+base.7=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-25.3.1_1c0fcf32068e5431071702a60209c4a822cade16
+file.6=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_0221b74417c98c5c08176eb9415a76f41458c37f\\classes.dex
+base.6=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_0221b74417c98c5c08176eb9415a76f41458c37f
+file.5=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_3d5da044b144dd0e3310b0c4ff7cc61e19e0af56\\classes.dex
+base.5=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_3d5da044b144dd0e3310b0c4ff7cc61e19e0af56
+file.4=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_70ddf593bd456d24f692e5dfaae5a7f39c6bff01\\classes.dex
+base.4=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_70ddf593bd456d24f692e5dfaae5a7f39c6bff01
+file.3=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_931cd662a4894e8db7085f8ee5abdb1432aea4b5\\classes.dex
+base.3=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_931cd662a4894e8db7085f8ee5abdb1432aea4b5
+>>>>>>> aa129db191456bd8772e00abdf7c0932202dd730

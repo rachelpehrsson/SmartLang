@@ -3,12 +3,30 @@
 
     <item
         is-multidex="true"
+<<<<<<< HEAD
         jar="C:\Users\Shivani\Documents\cs4720\final\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="e0cbcda173792930d882e0e0fee6478075078e3b">
         <dex dex="C:\Users\Shivani\Documents\cs4720\final\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_fad0d0a11efaa461b879563c5fb2cc7ead1f6f3a\classes.dex" />
+=======
+        jar="C:\Users\rhp8r\.android\build-cache\1412e282df36f27e02d8195ab7f27fad5de37dfe\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="C:\Users\rhp8r\final-project-final-spearow\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0221b74417c98c5c08176eb9415a76f41458c37f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rhp8r\.android\build-cache\d742234405feec863944311af67fc21382211b04\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="C:\Users\rhp8r\final-project-final-spearow\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_931cd662a4894e8db7085f8ee5abdb1432aea4b5\classes.dex" />
+>>>>>>> aa129db191456bd8772e00abdf7c0932202dd730
     </item>
     <item
         is-multidex="true"
@@ -18,6 +36,15 @@
         revision="26.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="C:\Users\Shivani\Documents\cs4720\final\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_6794eb7d9ae25d960153a63041291dde0f6e81c7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rhp8r\final-project-final-spearow\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\rhp8r\final-project-final-spearow\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_7d4bbe7ecffb27957fee5651891c22fde2c4857a\classes.dex" />
     </item>
 
 </items>

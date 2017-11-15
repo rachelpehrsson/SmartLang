@@ -15,7 +15,11 @@ import android.widget.EditText;
  */
 
 public class AddLanguage extends AppCompatActivity{
+<<<<<<< HEAD
     EditText addLanguage;
+=======
+EditText addLanguage;
+>>>>>>> aa129db191456bd8772e00abdf7c0932202dd730
     public boolean onSupportNavigateUp(){
         onBackPressed();
         return true;
@@ -45,4 +49,8 @@ public class AddLanguage extends AppCompatActivity{
         setResult(RESULT_OK,intent2);
         finish();
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> aa129db191456bd8772e00abdf7c0932202dd730
