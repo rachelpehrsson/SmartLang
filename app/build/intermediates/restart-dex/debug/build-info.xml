@@ -6,22 +6,35 @@
     density="420dpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1510766217821"
+    timestamp="1510774490195"
     token="-5316324149980147285"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="964" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="143" />
     <task
         name="verifier"
-        duration="0" />
+        duration="54" />
+
+    <artifact
+        location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\outputs\apk\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
@@ -66,26 +79,20 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1510763988809"
+        timestamp="1510774490195"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\outputs\apk\app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1510765202876"
-        verifier="COLD_SWAP_REQUESTED" >
+            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
         <artifact
             location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
+        <artifact
+            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
-    <build
-        build-mode="COLD"
-        timestamp="1510766217821"
-        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>
