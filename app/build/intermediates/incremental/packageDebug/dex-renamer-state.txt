@@ -1,7 +1,7 @@
-#Tue Nov 14 01:19:41 GMT-05:00 2017
-base.0=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_7f3cf727fe82d2cb6bb2a1817012e8fbaf0248a6
+#Tue Nov 14 19:20:22 EST 2017
+base.0=C\:\\Users\\Shivani\\Documents\\cs4720\\final\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_fad0d0a11efaa461b879563c5fb2cc7ead1f6f3a
 renamed.1=classes2.dex
 renamed.0=classes.dex
-file.1=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_7d4bbe7ecffb27957fee5651891c22fde2c4857a\\classes.dex
-base.1=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_7d4bbe7ecffb27957fee5651891c22fde2c4857a
-file.0=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_7f3cf727fe82d2cb6bb2a1817012e8fbaf0248a6\\classes.dex
+file.1=C\:\\Users\\Shivani\\Documents\\cs4720\\final\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_6794eb7d9ae25d960153a63041291dde0f6e81c7\\classes.dex
+base.1=C\:\\Users\\Shivani\\Documents\\cs4720\\final\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_6794eb7d9ae25d960153a63041291dde0f6e81c7
+file.0=C\:\\Users\\Shivani\\Documents\\cs4720\\final\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_fad0d0a11efaa461b879563c5fb2cc7ead1f6f3a\\classes.dex

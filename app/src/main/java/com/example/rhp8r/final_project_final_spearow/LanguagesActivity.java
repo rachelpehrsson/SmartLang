@@ -26,8 +26,15 @@ public class LanguagesActivity extends AppCompatActivity {
         rvItems.setLayoutManager(new LinearLayoutManager(this));
     }
 
+    public void langSelect(View view) {
+        Intent intent = new Intent(this, ChoicesActivity.class);
+        startActivity(intent);
+    }
+
     public void sendMessage(View view){
-        Intent intent2 = new Intent();
+        //Intent intent2 = new Intent();
+        Intent intent = new Intent(this, ChoicesActivity.class);
+        startActivity(intent);
         Button current = (Button) view;
         String currentname = current.getText().toString();
         Language selectedLang = new Language();
