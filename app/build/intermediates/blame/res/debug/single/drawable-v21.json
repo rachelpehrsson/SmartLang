@@ -1,11 +1,23 @@
 [
     {
+        "merged": "C:\\Users\\Shivani\\Documents\\cs4720\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
+        "source": "C:\\Users\\Shivani\\.android\\build-cache\\4a22781c7f65d6a9630734cd024b2fa87f8e2aaf\\output\\res\\drawable-v21\\design_password_eye.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shivani\\Documents\\cs4720\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\Shivani\\.android\\build-cache\\f7ab7655e5393af3d84bb1d6578ab47ac0125f14\\output\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
         "merged": "C:\\Users\\Shivani\\Documents\\cs4720\\final\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
         "source": "C:\\Users\\Shivani\\.android\\build-cache\\f7ab7655e5393af3d84bb1d6578ab47ac0125f14\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
     },
     {
         "merged": "C:\\Users\\Shivani\\Documents\\cs4720\\final\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
         "source": "C:\\Users\\Shivani\\.android\\build-cache\\4a22781c7f65d6a9630734cd024b2fa87f8e2aaf\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shivani\\Documents\\cs4720\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
+        "source": "C:\\Users\\Shivani\\.android\\build-cache\\4a22781c7f65d6a9630734cd024b2fa87f8e2aaf\\output\\res\\drawable-v21\\avd_hide_password.xml"
     },
     {
         "merged": "C:\\Users\\Shivani\\Documents\\cs4720\\final\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
@@ -20,6 +32,10 @@
         "source": "C:\\Users\\Shivani\\.android\\build-cache\\f7ab7655e5393af3d84bb1d6578ab47ac0125f14\\output\\res\\drawable-v21\\notification_action_background.xml"
     },
     {
+        "merged": "C:\\Users\\Shivani\\Documents\\cs4720\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Shivani\\.android\\build-cache\\f7ab7655e5393af3d84bb1d6578ab47ac0125f14\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
         "merged": "C:\\Users\\Shivani\\Documents\\cs4720\\final\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
         "source": "C:\\Users\\Shivani\\.android\\build-cache\\f7ab7655e5393af3d84bb1d6578ab47ac0125f14\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
@@ -29,6 +45,22 @@
     },
     {
         "merged": "C:\\Users\\Shivani\\Documents\\cs4720\\final\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Shivani\\.android\\build-cache\\f7ab7655e5393af3d84bb1d6578ab47ac0125f14\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shivani\\Documents\\cs4720\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
+        "source": "C:\\Users\\Shivani\\.android\\build-cache\\4a22781c7f65d6a9630734cd024b2fa87f8e2aaf\\output\\res\\drawable-v21\\avd_show_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shivani\\Documents\\cs4720\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\Shivani\\.android\\build-cache\\f7ab7655e5393af3d84bb1d6578ab47ac0125f14\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shivani\\Documents\\cs4720\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\Shivani\\.android\\build-cache\\4a22781c7f65d6a9630734cd024b2fa87f8e2aaf\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shivani\\Documents\\cs4720\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
         "source": "C:\\Users\\Shivani\\.android\\build-cache\\f7ab7655e5393af3d84bb1d6578ab47ac0125f14\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
     }
 ]

@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-#Tue Nov 14 19:17:42 EST 2017
-base.0=C\:\\Users\\Shivani\\Documents\\cs4720\\final\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_4
-=======
-#Wed Nov 15 00:06:59 GMT-05:00 2017
-base.0=C\:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_4
->>>>>>> aa129db191456bd8772e00abdf7c0932202dd730
+#Tue Nov 14 19:40:37 EST 2017
+base.0=C\:\\Users\\Shivani\\Documents\\cs4720\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_4
 renamed.0=classes.dex
-file.0=C\:\\Users\\Shivani\\Documents\\cs4720\\final\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_4\\classes.dex
+file.0=C\:\\Users\\Shivani\\Documents\\cs4720\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_4\\classes.dex

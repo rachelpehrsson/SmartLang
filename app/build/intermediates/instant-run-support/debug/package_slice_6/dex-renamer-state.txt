@@ -1,4 +1,4 @@
-#Tue Nov 14 18:36:33 EST 2017
-base.0=C\:\\Users\\Shivani\\Documents\\cs4720\\final\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_6
+#Tue Nov 14 19:40:37 EST 2017
+base.0=C\:\\Users\\Shivani\\Documents\\cs4720\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_6
 renamed.0=classes.dex
-file.0=C\:\\Users\\Shivani\\Documents\\cs4720\\final\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_6\\classes.dex
+file.0=C\:\\Users\\Shivani\\Documents\\cs4720\\final-project-final-spearow\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_6\\classes.dex
