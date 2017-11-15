@@ -3175,6 +3175,8 @@ containing a value of this type.
         public static final int icon_group=0x7f0d00a0;
         public static final int ifRoom=0x7f0d0043;
         public static final int image=0x7f0d004d;
+        public static final int imageLibraryButton=0x7f0d00a7;
+        public static final int imageView=0x7f0d00a8;
         public static final int info=0x7f0d009c;
         public static final int item_touch_helper_previous_elevation=0x7f0d0005;
         public static final int langSelect=0x7f0d008e;
@@ -3184,7 +3186,7 @@ containing a value of this type.
         public static final int line3=0x7f0d00a3;
         public static final int listMode=0x7f0d0018;
         public static final int list_item=0x7f0d004f;
-        public static final int masked=0x7f0d00a7;
+        public static final int masked=0x7f0d00aa;
         public static final int media_actions=0x7f0d0095;
         public static final int middle=0x7f0d0040;
         public static final int mini=0x7f0d003e;
@@ -3248,6 +3250,7 @@ containing a value of this type.
         public static final int submit_area=0x7f0d0076;
         public static final int tabMode=0x7f0d001a;
         public static final int tab_layout=0x7f0d0080;
+        public static final int takePictureButton=0x7f0d00a6;
         public static final int testView=0x7f0d007a;
         public static final int text=0x7f0d00a4;
         public static final int text2=0x7f0d00a2;
@@ -3270,7 +3273,7 @@ containing a value of this type.
         public static final int up=0x7f0d000d;
         public static final int useLogo=0x7f0d0020;
         public static final int view_offset_helper=0x7f0d000e;
-        public static final int visible=0x7f0d00a6;
+        public static final int visible=0x7f0d00a9;
         public static final int withText=0x7f0d0045;
         public static final int wrap=0x7f0d0011;
         public static final int wrap_content=0x7f0d002c;
