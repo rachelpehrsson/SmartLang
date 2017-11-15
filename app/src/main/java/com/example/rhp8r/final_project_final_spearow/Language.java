@@ -3,7 +3,7 @@ import android.support.v7.app.AppCompatActivity;
 import java.util.ArrayList;
 import android.widget.CheckBox;
 
-public class Language extends AppCompatActivity implements Comparable<Language> {
+public class Language extends AppCompatActivity {
     String lname;
     ArrayList <String> words;
     ArrayList <String> defs;
@@ -35,5 +35,7 @@ public class Language extends AppCompatActivity implements Comparable<Language> 
 
         return ls;
     }
+
+
     //   This class should have a static method called createInitialBucketList() that creates the initial, hard-coded bucket list ArrayList and returns it. This will be called in the onCreate() in the BucketListActivity.
 }

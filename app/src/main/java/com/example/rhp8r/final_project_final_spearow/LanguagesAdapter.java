@@ -71,7 +71,7 @@ public class LanguagesAdapter extends RecyclerView.Adapter<LanguagesAdapter.View
 
         // Set item views based on your views and data model
         Button langButton = viewHolder.languageSelect;
-        langButton.setText(lang.getLName());
+        langButton.setText(lang.getLname());
         /*if(!item.isOnline()) {
             textView.setClickable(false);
             textView.setActivated(false);

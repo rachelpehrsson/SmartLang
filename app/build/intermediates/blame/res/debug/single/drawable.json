@@ -52,6 +52,10 @@
         "source": "C:\\Users\\rhp8r\\.android\\build-cache\\d151eac3fdce1eef1198f763194047bb575fcfca\\output\\res\\drawable\\notification_bg_low.xml"
     },
     {
+        "merged": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
+        "source": "C:\\Users\\rhp8r\\.android\\build-cache\\d742234405feec863944311af67fc21382211b04\\output\\res\\drawable\\design_password_eye.xml"
+    },
+    {
         "merged": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
         "source": "C:\\Users\\rhp8r\\.android\\build-cache\\d151eac3fdce1eef1198f763194047bb575fcfca\\output\\res\\drawable\\abc_tab_indicator_material.xml"
     },
@@ -94,6 +98,10 @@
     {
         "merged": "C:\\Users\\rhp8r\\final-project-final-spearow2\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
         "source": "C:\\Users\\rhp8r\\.android\\build-cache\\d151eac3fdce1eef1198f763194047bb575fcfca\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\rhp8r\\.android\\build-cache\\d742234405feec863944311af67fc21382211b04\\output\\res\\drawable\\design_snackbar_background.xml"
     },
     {
         "merged": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
@@ -184,6 +192,10 @@
         "source": "C:\\Users\\rhp8r\\.android\\build-cache\\d151eac3fdce1eef1198f763194047bb575fcfca\\output\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
+        "merged": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\rhp8r\\.android\\build-cache\\d742234405feec863944311af67fc21382211b04\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
+    },
+    {
         "merged": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
         "source": "C:\\Users\\rhp8r\\.android\\build-cache\\d151eac3fdce1eef1198f763194047bb575fcfca\\output\\res\\drawable\\abc_cab_background_top_material.xml"
     },
@@ -228,6 +240,10 @@
         "source": "C:\\Users\\rhp8r\\.android\\build-cache\\d151eac3fdce1eef1198f763194047bb575fcfca\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
+        "merged": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "C:\\Users\\rhp8r\\.android\\build-cache\\d742234405feec863944311af67fc21382211b04\\output\\res\\drawable\\design_fab_background.xml"
+    },
+    {
         "merged": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
         "source": "C:\\Users\\rhp8r\\.android\\build-cache\\d151eac3fdce1eef1198f763194047bb575fcfca\\output\\res\\drawable\\abc_ic_clear_material.xml"
     },
@@ -270,6 +286,10 @@
     {
         "merged": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
         "source": "C:\\Users\\rhp8r\\.android\\build-cache\\d151eac3fdce1eef1198f763194047bb575fcfca\\output\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
+        "source": "C:\\Users\\rhp8r\\.android\\build-cache\\d742234405feec863944311af67fc21382211b04\\output\\res\\drawable\\navigation_empty_icon.xml"
     },
     {
         "merged": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
