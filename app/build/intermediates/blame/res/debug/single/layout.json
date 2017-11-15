@@ -276,6 +276,10 @@
         "source": "C:\\Users\\rhp8r\\.android\\build-cache\\d151eac3fdce1eef1198f763194047bb575fcfca\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
+        "merged": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\add_language.xml",
+        "source": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\src\\main\\res\\layout\\add_language.xml"
+    },
+    {
         "merged": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
         "source": "C:\\Users\\rhp8r\\.android\\build-cache\\d742234405feec863944311af67fc21382211b04\\output\\res\\layout\\design_navigation_item_subheader.xml"
     },
