@@ -19,7 +19,8 @@
         <activity android:name=".ChoicesActivity"
             android:label="Options"
             android:parentActivityName="com.example.rhp8r.final_project_final_spearow.LanguagesActivity"/>
-        <activity android:name=".AddLanguage"></activity>
+        <activity android:name=".AddLanguage"
+            android:parentActivityName="com.example.rhp8r.final_project_final_spearow.LanguagesActivity"/>
     </application>
 
 </manifest>

@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -58,6 +59,20 @@ public class LanguagesActivity extends AppCompatActivity {
     public void addLanguage(View view) {
         Intent intent1 = new Intent(this, AddLanguage.class);
         startActivityForResult(intent1, ADD_LANG);
+    }
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        // Save the user's current state
+        Log.d("RotationExample", "Rotating!");
+
+        super.onSaveInstanceState(savedInstanceState);
+    }
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        // Always call the superclass so it can restore the view hierarchy
+        Log.d("RotationExample", "Rebuilding the View!");
+        super.onRestoreInstanceState(savedInstanceState);
+
+        // Restore state members from saved instance
+
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {

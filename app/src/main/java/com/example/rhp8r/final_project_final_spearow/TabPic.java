@@ -47,10 +47,10 @@ public class TabPic extends Fragment {
         imageView = (ImageView) rootView.findViewById(R.id.imageView);
 
         // We are giving you the code that checks for permissions
-//        if (ContextCompat.checkSelfPermission(takePicture(imageView), android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
-//            takePictureButton.setEnabled(false);
-//            ActivityCompat.requestPermissions(this, new String[] { android.Manifest.permission.CAMERA, android.Manifest.permission.WRITE_EXTERNAL_STORAGE }, TAKE_PHOTO_PERMISSION);
-//        }
+        /*if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+            takePictureButton.setEnabled(false);
+            ActivityCompat.requestPermissions(this, new String[] { android.Manifest.permission.CAMERA, android.Manifest.permission.WRITE_EXTERNAL_STORAGE }, TAKE_PHOTO_PERMISSION);
+        }*/
 
         //Button button = (Button) view.findViewById(R.id.button1);
         takePictureButton.setOnClickListener(new View.OnClickListener() {
