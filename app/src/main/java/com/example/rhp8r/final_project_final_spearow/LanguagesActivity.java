@@ -15,6 +15,7 @@ public class LanguagesActivity extends AppCompatActivity {
     public static final int MEDIA_RET = 2;
     ArrayList<Language> languageList;
     RecyclerView rvItems;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,15 +27,22 @@ public class LanguagesActivity extends AppCompatActivity {
         rvItems.setLayoutManager(new LinearLayoutManager(this));
     }
 
-    public void sendMessage(View view){
-        Intent intent2 = new Intent();
+    public void langSelect(View view) {
+        Intent intent = new Intent(this, ChoicesActivity.class);
+        startActivity(intent);
+    }
+
+    public void sendMessage(View view) {
+        //Intent intent2 = new Intent();
+        Intent intent = new Intent(this, ChoicesActivity.class);
+        startActivity(intent);
         Button current = (Button) view;
         String currentname = current.getText().toString();
         Language selectedLang = new Language();
         int position;
-        for (int i = 0; i<languageList.size(); i++){
+        for (int i = 0; i < languageList.size(); i++) {
             Language iter = languageList.get(i);
-            if (currentname == iter.getLname()){
+            if (currentname == iter.getLname()) {
                 selectedLang = iter;
                 position = i;
             }
@@ -46,11 +54,33 @@ public class LanguagesActivity extends AppCompatActivity {
 
 
     }
-   /* public void addLanguage(View view) {
+
+    public void addLanguage(View view) {
         Intent intent1 = new Intent(this, AddLanguage.class);
-        startActivityForResult(intent1, ADD_lANG);
-    }*/
+        startActivityForResult(intent1, ADD_LANG);
+    }
+
+    public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+        super.onActivityResult(requestCode, resultCode, intent);
+        Bundle b = intent.getExtras();
+        String newLang = b.getString("newLang");
+        String firstWord = b.getString("newWord");
+        String firstDef = b.getString("newDef");
+        boolean hasAdded = b.getBoolean("addedVocab");
+        if (requestCode == ADD_LANG) {
+
+            Language newLanguage = new Language(newLang);
+            if (hasAdded == true) {
+                newLanguage.getWordList().add(firstWord);
+                newLanguage.getDefList().add(firstDef);
+            }
+            languageList.add(newLanguage);
+            rvItems.getAdapter().notifyDataSetChanged();
+            LanguagesAdapter adapter = new LanguagesAdapter(this, languageList);
+            rvItems.setAdapter(adapter);
+            rvItems.setLayoutManager(new LinearLayoutManager(this));
+        }
 
 
-
+    }
 }

@@ -61,8 +61,6 @@ public class LanguagesAdapter extends RecyclerView.Adapter<LanguagesAdapter.View
     /*public void onCheckboxClicked(View view) {
         // Is the view now checked?
         boolean checked = ((CheckBox) view).isChecked();
-
-
     }*/
     @Override
     public void onBindViewHolder(LanguagesAdapter.ViewHolder viewHolder, int position) {
@@ -76,7 +74,6 @@ public class LanguagesAdapter extends RecyclerView.Adapter<LanguagesAdapter.View
             textView.setClickable(false);
             textView.setActivated(false);
             textView.setEnabled(false);
-
         }*/
 
     }

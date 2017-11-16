@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ChoicesActivity"
+            android:label="Options"
+            android:parentActivityName="com.example.rhp8r.final_project_final_spearow.LanguagesActivity"/>
+        <activity android:name=".AddLanguage"></activity>
     </application>
 
 </manifest>
