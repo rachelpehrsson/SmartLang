@@ -1,6 +1,11 @@
 package com.example.rhp8r.final_project_final_spearow;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import java.util.ArrayList;
+
+import android.util.Log;
+import android.view.View;
 import android.widget.CheckBox;
 
 public class Language extends AppCompatActivity {
@@ -27,7 +32,8 @@ public class Language extends AppCompatActivity {
         return this.defs;
     }
 
-    public static ArrayList<Language> createInitialLanguageList(){ ///????? idk how this is actually supposed to work
+    public static ArrayList<Language> createInitialLanguageList(ArrayList<String> names){ ///????? idk how this is actually supposed to work
+        //ArrayList<String> names = loadLanguagesFromDatabase();
         ArrayList<Language> ls = new ArrayList<Language>();
         ls.add(new Language("Spanish"));
         ls.add(new Language("French"));
@@ -35,6 +41,7 @@ public class Language extends AppCompatActivity {
 
         return ls;
     }
+
 
 
     //   This class should have a static method called createInitialBucketList() that creates the initial, hard-coded bucket list ArrayList and returns it. This will be called in the onCreate() in the BucketListActivity.

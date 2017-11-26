@@ -1,6 +1,8 @@
 package com.example.rhp8r.final_project_final_spearow;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -14,6 +16,7 @@ import java.util.ArrayList;
 public class LanguagesActivity extends AppCompatActivity {
     public static final int ADD_LANG = 1;
     public static final int MEDIA_RET = 2;
+    ArrayList<String> langIDs;
     ArrayList<Language> languageList;
     RecyclerView rvItems;
 
@@ -22,10 +25,40 @@ public class LanguagesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_languages);
         rvItems = (RecyclerView) findViewById(R.id.rvItems);
-        languageList = Language.createInitialLanguageList();
+        loadLanguagesFromDatabase();
+        languageList = Language.createInitialLanguageList(langIDs);
         LanguagesAdapter adapter = new LanguagesAdapter(this, languageList);
         rvItems.setAdapter(adapter);
         rvItems.setLayoutManager(new LinearLayoutManager(this));
+    }
+    
+    public void loadLanguagesFromDatabase() {
+        DatabaseHelper mDbHelper = new DatabaseHelper(this);
+        SQLiteDatabase db = mDbHelper.getWritableDatabase();
+
+        String[] projection = {
+                "langname"
+        };
+        String sortOrder =
+                "";
+        Cursor cursor = db.query(
+                "languages",  // The table to query
+                projection,                               // The columns to return
+                null,                                // The columns for the WHERE clause
+                null,                            // The values for the WHERE clause
+                null,                                     // don't group the rows
+                null,                                     // don't filter by row groups
+                sortOrder                                 // The sort order
+        );
+        ArrayList<String> langIDs = new ArrayList<>();
+        String name = "";
+        while (cursor.moveToNext()) {
+            langIDs.add(cursor.getString(
+                    cursor.getColumnIndexOrThrow("langname")
+            ));
+            //Log.i("DBData");
+        }
+        cursor.close();
     }
 
     public void langSelect(View view) {

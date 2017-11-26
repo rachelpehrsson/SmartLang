@@ -1,5 +1,7 @@
 package com.example.rhp8r.final_project_final_spearow;
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -49,8 +51,41 @@ public class AddLanguage extends AppCompatActivity {
             addedVocab = true;
         }
     }
+    public void saveToDatabase(View view) {
+        // Add code here to save to the database
+        DatabaseHelper mDbHelper = new DatabaseHelper(this);
+        SQLiteDatabase db = mDbHelper.getWritableDatabase();
+
+        // Create a new map of values, where column names are the keys
+        ContentValues values1 = new ContentValues();
+        ContentValues values2 = new ContentValues();
+        String lang = addLanguage.getText().toString();
+        String word = newWord.getText().toString();
+        String def = newDef.getText().toString();
+        values1.put("langname", lang);
+        values2.put("word", word);
+        values2.put("translation", def);
+        values2.put("ranking", 0);
+        values2.put("langname", lang);
+
+        long newRowId1;
+        long newRowId2;
+        newRowId1 = db.insert(
+                "languages",
+                null,
+                values1);
+
+        newRowId2 = db.insert(
+                "vocabulary",
+                null,
+                values2);
+
+
+
+    }
 
     public void sendMessage(View view) {
+        saveToDatabase(view);
         Intent intent2 = new Intent();
         Bundle b = new Bundle();
         b.putString("newLang", addLanguage.getText().toString());
