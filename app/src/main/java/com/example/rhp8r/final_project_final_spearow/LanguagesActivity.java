@@ -1,5 +1,6 @@
 package com.example.rhp8r.final_project_final_spearow;
 
+import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -26,10 +27,63 @@ public class LanguagesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_languages);
         rvItems = (RecyclerView) findViewById(R.id.rvItems);
         loadLanguagesFromDatabase();
+        if (langIDs.size()==0){
+            saveToDatabase("French");
+            saveToDatabase("Spanish");
+            saveToDatabase("Hindi");
+            loadLanguagesFromDatabase();
+        }
         languageList = Language.createInitialLanguageList(langIDs);
         LanguagesAdapter adapter = new LanguagesAdapter(this, languageList);
         rvItems.setAdapter(adapter);
         rvItems.setLayoutManager(new LinearLayoutManager(this));
+    }
+
+    public void saveToDatabase(String lang) {
+        // Add code here to save to the database
+        DatabaseHelper mDbHelper = new DatabaseHelper(this);
+        SQLiteDatabase db = mDbHelper.getWritableDatabase();
+
+        // Create a new map of values, where column names are the keys
+        ContentValues values = new ContentValues();
+        values.put("name", lang);
+
+        long newRowId;
+        newRowId = db.insertWithOnConflict(
+                "languages",
+                null,
+                values, SQLiteDatabase.CONFLICT_IGNORE);
+
+
+    }
+    public void saveToDatabase(String lang, String word, String def) {
+        // Add code here to save to the database
+        DatabaseHelper mDbHelper = new DatabaseHelper(this);
+        SQLiteDatabase db = mDbHelper.getWritableDatabase();
+
+        // Create a new map of values, where column names are the keys
+        ContentValues values1 = new ContentValues();
+        ContentValues values2 = new ContentValues();
+        values1.put("langname", lang);
+        values2.put("word", word);
+        values2.put("translation", def);
+        values2.put("ranking", 0);
+        values2.put("langname", lang);
+
+        long newRowId1;
+        long newRowId2;
+        newRowId1 = db.insertWithOnConflict(
+                "languages",
+                null,
+                values1, SQLiteDatabase.CONFLICT_IGNORE);
+
+        newRowId2 = db.insertWithOnConflict(
+                "vocabulary",
+                null,
+                values2, SQLiteDatabase.CONFLICT_IGNORE);
+
+
+
     }
 
     public void loadLanguagesFromDatabase() {
@@ -50,7 +104,6 @@ public class LanguagesActivity extends AppCompatActivity {
                 null,                                     // don't filter by row groups
                 sortOrder                                 // The sort order
         );
-        ArrayList<String> langIDs = new ArrayList<>();
         String name = "";
         while (cursor.moveToNext()) {
             langIDs.add(cursor.getString(

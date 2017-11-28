@@ -51,7 +51,24 @@ public class AddLanguage extends AppCompatActivity {
             addedVocab = true;
         }
     }
-    public void saveToDatabase(View view) {
+    public void saveToDatabase(String lang) {
+        // Add code here to save to the database
+        DatabaseHelper mDbHelper = new DatabaseHelper(this);
+        SQLiteDatabase db = mDbHelper.getWritableDatabase();
+
+        // Create a new map of values, where column names are the keys
+        ContentValues values = new ContentValues();
+        values.put("name", lang);
+
+        long newRowId;
+        newRowId = db.insert(
+                "languages",
+                null,
+                values);
+
+
+    }
+    public void saveToDatabase(String lang, String word, String def) {
         // Add code here to save to the database
         DatabaseHelper mDbHelper = new DatabaseHelper(this);
         SQLiteDatabase db = mDbHelper.getWritableDatabase();
@@ -59,9 +76,6 @@ public class AddLanguage extends AppCompatActivity {
         // Create a new map of values, where column names are the keys
         ContentValues values1 = new ContentValues();
         ContentValues values2 = new ContentValues();
-        String lang = addLanguage.getText().toString();
-        String word = newWord.getText().toString();
-        String def = newDef.getText().toString();
         values1.put("langname", lang);
         values2.put("word", word);
         values2.put("translation", def);
@@ -83,9 +97,13 @@ public class AddLanguage extends AppCompatActivity {
 
 
     }
-
     public void sendMessage(View view) {
-        saveToDatabase(view);
+        if (addedVocab == false) {
+            saveToDatabase(addLanguage.getText().toString());
+        }
+        else{
+            saveToDatabase(addLanguage.getText().toString(),newWord.getText().toString(),newDef.getText().toString());
+        }
         Intent intent2 = new Intent();
         Bundle b = new Bundle();
         b.putString("newLang", addLanguage.getText().toString());
