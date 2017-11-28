@@ -18,7 +18,7 @@ public class Language extends AppCompatActivity {
         this.lname = "";
         this.words = new ArrayList <String>();
         this.defs = new ArrayList <String>();
-        this.ranks = new ArrayList <String>();
+        /*this.ranks = new ArrayList <String>();*/
     }
     public Language (String langname){
         this.lname = langname;

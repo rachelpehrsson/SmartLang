@@ -20,12 +20,12 @@ public class TabVocab extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View rootView = inflater.inflate(R.layout.vocabtab, container, false);
-        vocabList = (RecyclerView) rootView.findViewById(R.id.vocabList);
-        VocabAdapter adapter = new VocabAdapter(getActivity(), );
+        /*vocabList = (RecyclerView) rootView.findViewById(R.id.vocabList);
+        VocabAdapter adapter = new VocabAdapter(getActivity(), words, defs);
         vocabList.setAdapter(adapter);
-        vocabList.setLayoutManager(new LinearLayoutManager(getActivity()));
+        vocabList.setLayoutManager(new LinearLayoutManager(getActivity()));*/
     }
-    public void loadLanguageInfoFromDatabase(String langname) {
+   /* public void loadLanguageInfoFromDatabase(String langname) {
         DatabaseHelper mDbHelper = new DatabaseHelper(getActivity());
         SQLiteDatabase db = mDbHelper.getWritableDatabase();
 
@@ -46,13 +46,13 @@ public class TabVocab extends Fragment {
                 null,                                     // don't filter by row groups
                 sortOrder                                 // The sort order
         );
-        ArrayList<String> words = new ArrayList
+         words = new ArrayList();
         while (cursor.moveToNext()) {
-            langIDs.add(cursor.getString(
+            words.add(cursor.getString(
                     cursor.getColumnIndexOrThrow("langname")
             ));
             //Log.i("DBData");
         }
         cursor.close();
-    }
+    }*/
 }
