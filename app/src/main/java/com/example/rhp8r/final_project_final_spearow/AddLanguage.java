@@ -61,10 +61,10 @@ public class AddLanguage extends AppCompatActivity {
         values.put("name", lang);
 
         long newRowId;
-        newRowId = db.insert(
+        newRowId = db.insertWithOnConflict(
                 "languages",
                 null,
-                values);
+                values, SQLiteDatabase.CONFLICT_IGNORE);
 
 
     }
@@ -84,15 +84,15 @@ public class AddLanguage extends AppCompatActivity {
 
         long newRowId1;
         long newRowId2;
-        newRowId1 = db.insert(
+        newRowId1 = db.insertWithOnConflict(
                 "languages",
                 null,
-                values1);
+                values1, SQLiteDatabase.CONFLICT_IGNORE);
 
-        newRowId2 = db.insert(
+        newRowId2 = db.insertWithOnConflict(
                 "vocabulary",
                 null,
-                values2);
+                values2,  SQLiteDatabase.CONFLICT_IGNORE);
 
 
 

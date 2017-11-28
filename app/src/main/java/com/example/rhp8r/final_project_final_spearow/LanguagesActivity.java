@@ -26,8 +26,9 @@ public class LanguagesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_languages);
         rvItems = (RecyclerView) findViewById(R.id.rvItems);
+        langIDs = new ArrayList<String>();
         loadLanguagesFromDatabase();
-        if (langIDs.size()==0){
+        if (langIDs == null){
             saveToDatabase("French");
             saveToDatabase("Spanish");
             saveToDatabase("Hindi");
@@ -46,7 +47,7 @@ public class LanguagesActivity extends AppCompatActivity {
 
         // Create a new map of values, where column names are the keys
         ContentValues values = new ContentValues();
-        values.put("name", lang);
+        values.put("langname", lang);
 
         long newRowId;
         newRowId = db.insertWithOnConflict(
