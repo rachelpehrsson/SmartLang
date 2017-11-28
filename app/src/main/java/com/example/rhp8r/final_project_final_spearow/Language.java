@@ -11,29 +11,30 @@ import android.widget.CheckBox;
 
 public class Language extends AppCompatActivity {
     String lname;
+    /*
     ArrayList <String> words;
     ArrayList <String> defs;
-    ArrayList <Integer> ranks;
+    ArrayList <Integer> ranks;*/
     public Language() {
-        this.lname = "";
+        this.lname = "";/*
         this.words = new ArrayList <String>();
         this.defs = new ArrayList <String>();
         /*this.ranks = new ArrayList <String>();*/
     }
     public Language (String langname){
         this.lname = langname;
-        this.words = new ArrayList <String>();
-        this.defs = new ArrayList <String>();
+        /*this.words = new ArrayList <String>();
+        this.defs = new ArrayList <String>();*/
     }
     public String getLname(){
         return this.lname;
     }
-    public ArrayList <String> getWordList(){
+    /*public ArrayList <String> getWordList(){
         return this.words;
     }
     public ArrayList <String> getDefList(){
         return this.defs;
-    }
+    }*/
 
     public static ArrayList<Language> createInitialLanguageList(ArrayList<String> names){ ///????? idk how this is actually supposed to work
         //ArrayList<String> names = loadLanguagesFromDatabase();

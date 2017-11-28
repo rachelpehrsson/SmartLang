@@ -40,6 +40,10 @@
         "source": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\src\\main\\res\\layout\\activity_languages.xml"
     },
     {
+        "merged": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\vocab_entry.xml",
+        "source": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\src\\main\\res\\layout\\vocab_entry.xml"
+    },
+    {
         "merged": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
         "source": "C:\\Users\\rhp8r\\.android\\build-cache\\d151eac3fdce1eef1198f763194047bb575fcfca\\output\\res\\layout\\abc_list_menu_item_icon.xml"
     },

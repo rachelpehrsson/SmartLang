@@ -24,6 +24,7 @@ public class TabVocab extends Fragment {
         VocabAdapter adapter = new VocabAdapter(getActivity(), words, defs);
         vocabList.setAdapter(adapter);
         vocabList.setLayoutManager(new LinearLayoutManager(getActivity()));*/
+        return rootView;
     }
    /* public void loadLanguageInfoFromDatabase(String langname) {
         DatabaseHelper mDbHelper = new DatabaseHelper(getActivity());

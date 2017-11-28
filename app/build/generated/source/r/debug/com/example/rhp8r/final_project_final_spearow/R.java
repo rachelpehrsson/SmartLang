@@ -3127,6 +3127,7 @@ containing a value of this type.
         public static final int actions=0x7f0d00a8;
         public static final int activity_chooser_view_content=0x7f0d004b;
         public static final int add=0x7f0d0026;
+        public static final int addVocab=0x7f0d00b5;
         public static final int alertTitle=0x7f0d005f;
         public static final int all=0x7f0d0014;
         public static final int always=0x7f0d0041;
@@ -3192,7 +3193,7 @@ containing a value of this type.
         public static final int line3=0x7f0d00ac;
         public static final int listMode=0x7f0d0018;
         public static final int list_item=0x7f0d004f;
-        public static final int masked=0x7f0d00b2;
+        public static final int masked=0x7f0d00b7;
         public static final int media_actions=0x7f0d009e;
         public static final int middle=0x7f0d0040;
         public static final int mini=0x7f0d003e;
@@ -3215,6 +3216,9 @@ containing a value of this type.
         public static final int progress_horizontal=0x7f0d0007;
         public static final int question=0x7f0d007f;
         public static final int radio=0x7f0d0064;
+        public static final int rank1=0x7f0d00b1;
+        public static final int rank2=0x7f0d00b2;
+        public static final int rank3=0x7f0d00b3;
         public static final int right=0x7f0d0035;
         public static final int right_icon=0x7f0d00a6;
         public static final int right_side=0x7f0d00a2;
@@ -3280,7 +3284,8 @@ containing a value of this type.
         public static final int up=0x7f0d000d;
         public static final int useLogo=0x7f0d0020;
         public static final int view_offset_helper=0x7f0d000e;
-        public static final int visible=0x7f0d00b1;
+        public static final int visible=0x7f0d00b6;
+        public static final int vocabList=0x7f0d00b4;
         public static final int withText=0x7f0d0045;
         public static final int word=0x7f0d0080;
         public static final int wrap=0x7f0d0011;
@@ -3365,7 +3370,8 @@ containing a value of this type.
         public static final int select_dialog_multichoice_material=0x7f040040;
         public static final int select_dialog_singlechoice_material=0x7f040041;
         public static final int support_simple_spinner_dropdown_item=0x7f040042;
-        public static final int vocabtab=0x7f040043;
+        public static final int vocab_entry=0x7f040043;
+        public static final int vocabtab=0x7f040044;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;

@@ -28,7 +28,7 @@ public class LanguagesActivity extends AppCompatActivity {
         rvItems = (RecyclerView) findViewById(R.id.rvItems);
         langIDs = new ArrayList<String>();
         loadLanguagesFromDatabase();
-        if (langIDs == null){
+        if (langIDs.size()==0){
             saveToDatabase("French");
             saveToDatabase("Spanish");
             saveToDatabase("Hindi");
@@ -164,8 +164,8 @@ public class LanguagesActivity extends AppCompatActivity {
         }
         Bundle b = new Bundle();
         b.putString("langName", selectedLang.getLname());
-        b.putStringArrayList("langWords", selectedLang.getWordList());
-        b.putStringArrayList("langDefs", selectedLang.getDefList());
+        /*b.putStringArrayList("langWords", selectedLang.getWordList());
+        b.putStringArrayList("langDefs", selectedLang.getDefList());*/
 
 
     }
@@ -200,8 +200,8 @@ public class LanguagesActivity extends AppCompatActivity {
 
             Language newLanguage = new Language(newLang);
             if (hasAdded == true) {
-                newLanguage.getWordList().add(firstWord);
-                newLanguage.getDefList().add(firstDef);
+                /*newLanguage.getWordList().add(firstWord);
+                newLanguage.getDefList().add(firstDef);*/
             }
             languageList.add(newLanguage);
             rvItems.getAdapter().notifyDataSetChanged();

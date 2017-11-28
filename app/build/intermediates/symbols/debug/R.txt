@@ -746,6 +746,7 @@ int id action_text 0x7f0d009a
 int id actions 0x7f0d00a8
 int id activity_chooser_view_content 0x7f0d004b
 int id add 0x7f0d0026
+int id addVocab 0x7f0d00b5
 int id alertTitle 0x7f0d005f
 int id all 0x7f0d0014
 int id always 0x7f0d0041
@@ -811,7 +812,7 @@ int id line1 0x7f0d00aa
 int id line3 0x7f0d00ac
 int id listMode 0x7f0d0018
 int id list_item 0x7f0d004f
-int id masked 0x7f0d00b2
+int id masked 0x7f0d00b7
 int id media_actions 0x7f0d009e
 int id middle 0x7f0d0040
 int id mini 0x7f0d003e
@@ -834,6 +835,9 @@ int id progress_circular 0x7f0d0006
 int id progress_horizontal 0x7f0d0007
 int id question 0x7f0d007f
 int id radio 0x7f0d0064
+int id rank1 0x7f0d00b1
+int id rank2 0x7f0d00b2
+int id rank3 0x7f0d00b3
 int id right 0x7f0d0035
 int id right_icon 0x7f0d00a6
 int id right_side 0x7f0d00a2
@@ -899,7 +903,8 @@ int id transition_scene_layoutid_cache 0x7f0d000c
 int id up 0x7f0d000d
 int id useLogo 0x7f0d0020
 int id view_offset_helper 0x7f0d000e
-int id visible 0x7f0d00b1
+int id visible 0x7f0d00b6
+int id vocabList 0x7f0d00b4
 int id withText 0x7f0d0045
 int id word 0x7f0d0080
 int id wrap 0x7f0d0011
@@ -980,7 +985,8 @@ int layout select_dialog_item_material 0x7f04003f
 int layout select_dialog_multichoice_material 0x7f040040
 int layout select_dialog_singlechoice_material 0x7f040041
 int layout support_simple_spinner_dropdown_item 0x7f040042
-int layout vocabtab 0x7f040043
+int layout vocab_entry 0x7f040043
+int layout vocabtab 0x7f040044
 int mipmap ic_launcher 0x7f030000
 int mipmap ic_launcher_round 0x7f030001
 int string abc_action_bar_home_description 0x7f070000
