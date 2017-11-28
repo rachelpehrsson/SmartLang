@@ -31,7 +31,7 @@ public class LanguagesActivity extends AppCompatActivity {
         rvItems.setAdapter(adapter);
         rvItems.setLayoutManager(new LinearLayoutManager(this));
     }
-    
+
     public void loadLanguagesFromDatabase() {
         DatabaseHelper mDbHelper = new DatabaseHelper(this);
         SQLiteDatabase db = mDbHelper.getWritableDatabase();
