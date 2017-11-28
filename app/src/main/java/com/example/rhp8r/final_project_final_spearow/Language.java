@@ -13,10 +13,12 @@ public class Language extends AppCompatActivity {
     String lname;
     ArrayList <String> words;
     ArrayList <String> defs;
+    ArrayList <Integer> ranks;
     public Language() {
         this.lname = "";
         this.words = new ArrayList <String>();
         this.defs = new ArrayList <String>();
+        this.ranks = new ArrayList <String>();
     }
     public Language (String langname){
         this.lname = langname;

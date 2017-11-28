@@ -114,6 +114,33 @@ public class LanguagesActivity extends AppCompatActivity {
         }
         cursor.close();
     }
+    public void loadLanguageInfoFromDatabase(String langname) {
+        DatabaseHelper mDbHelper = new DatabaseHelper(this);
+        SQLiteDatabase db = mDbHelper.getWritableDatabase();
+
+        String[] projection = {
+                ""
+        };
+        String sortOrder =
+                "";
+        Cursor cursor = db.query(
+                "languages",  // The table to query
+                projection,                               // The columns to return
+                null,                                // The columns for the WHERE clause
+                null,                            // The values for the WHERE clause
+                null,                                     // don't group the rows
+                null,                                     // don't filter by row groups
+                sortOrder                                 // The sort order
+        );
+        String name = "";
+        while (cursor.moveToNext()) {
+            langIDs.add(cursor.getString(
+                    cursor.getColumnIndexOrThrow("langname")
+            ));
+            //Log.i("DBData");
+        }
+        cursor.close();
+    }
 
     public void langSelect(View view) {
         Intent intent = new Intent(this, ChoicesActivity.class);
