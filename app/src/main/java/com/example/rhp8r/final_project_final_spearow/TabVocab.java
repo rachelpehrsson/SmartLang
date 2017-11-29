@@ -1,5 +1,6 @@
 package com.example.rhp8r.final_project_final_spearow;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -19,7 +20,11 @@ public class TabVocab extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View rootView = inflater.inflate(R.layout.vocabtab, container, false);
+        Intent intent = getActivity().getIntent();
+        Bundle b = intent.getExtras();
+        String name = b.getString("langname");
         vocabList = (RecyclerView) rootView.findViewById(R.id.vocabList);
+        loadLanguageInfoFromDatabase(name);
         VocabAdapter adapter = new VocabAdapter(getActivity(), vocab);
         vocabList.setAdapter(adapter);
         vocabList.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -28,7 +33,7 @@ public class TabVocab extends Fragment {
     public void sort(){
         Collections.sort(vocab, Collections.reverseOrder());
     }
-   /* public void loadLanguageInfoFromDatabase(String langname) {
+    public void loadLanguageInfoFromDatabase(String langname) {
         DatabaseHelper mDbHelper = new DatabaseHelper(getActivity());
         SQLiteDatabase db = mDbHelper.getWritableDatabase();
 
@@ -49,13 +54,13 @@ public class TabVocab extends Fragment {
                 null,                                     // don't filter by row groups
                 sortOrder                                 // The sort order
         );
-         words = new ArrayList();
+         vocab = new ArrayList();
         while (cursor.moveToNext()) {
-            words.add(cursor.getString(
-                    cursor.getColumnIndexOrThrow("langname")
-            ));
+            Vocab temp = new Vocab(cursor.getString(cursor.getColumnIndexOrThrow("word")), cursor.getString(cursor.getColumnIndexOrThrow("def")),
+                    cursor.getInt(cursor.getColumnIndexOrThrow("rank")),langname);
+            vocab.add(temp);
             //Log.i("DBData");
         }
         cursor.close();
-    }*/
+    }
 }

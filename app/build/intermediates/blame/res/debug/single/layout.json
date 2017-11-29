@@ -64,6 +64,10 @@
         "source": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\src\\main\\res\\layout\\language_entry.xml"
     },
     {
+        "merged": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\add_vocab.xml",
+        "source": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\src\\main\\res\\layout\\add_vocab.xml"
+    },
+    {
         "merged": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
         "source": "C:\\Users\\rhp8r\\.android\\build-cache\\d151eac3fdce1eef1198f763194047bb575fcfca\\output\\res\\layout\\abc_screen_content_include.xml"
     },

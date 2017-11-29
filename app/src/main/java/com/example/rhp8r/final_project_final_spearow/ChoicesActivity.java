@@ -1,5 +1,6 @@
 package com.example.rhp8r.final_project_final_spearow;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -24,7 +25,8 @@ public class ChoicesActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("Audio"));
         tabLayout.addTab(tabLayout.newTab().setText("Links"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
-
+        Intent intent = getIntent();
+        Bundle b = intent.getExtras();
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         final TabAdapter adapter = new TabAdapter
                 (getSupportFragmentManager(), tabLayout.getTabCount());
