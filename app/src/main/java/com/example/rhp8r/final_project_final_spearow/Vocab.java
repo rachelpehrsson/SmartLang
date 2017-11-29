@@ -4,7 +4,7 @@ package com.example.rhp8r.final_project_final_spearow;
  * Created by rhp8r on 11/28/2017.
  */
 
-public class Vocab implements Comparable<T>{
+public class Vocab implements Comparable<Vocab>{
     private String word;
     private String def;
     private int rank;
@@ -37,6 +37,16 @@ public class Vocab implements Comparable<T>{
     public void setRank(int rank){this.rank = rank;}
 
     @Override
-    
+    public int compareTo(Vocab v2){
+        if (this.getRank()>v2.getRank()){
+            return 1;
+        }
+        else if (this.getRank()<v2.getRank()){
+            return -1;
+        }
+        else{
+            return 0;
+        }
+    }
 
 }

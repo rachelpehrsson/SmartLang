@@ -10,21 +10,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class TabVocab extends Fragment {
     RecyclerView vocabList;
-    ArrayList<String> words;
-    ArrayList<String> defs;
-    ArrayList<Integer> ranks;
+    ArrayList<Vocab> vocab;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View rootView = inflater.inflate(R.layout.vocabtab, container, false);
-        /*vocabList = (RecyclerView) rootView.findViewById(R.id.vocabList);
-        VocabAdapter adapter = new VocabAdapter(getActivity(), words, defs);
+        vocabList = (RecyclerView) rootView.findViewById(R.id.vocabList);
+        VocabAdapter adapter = new VocabAdapter(getActivity(), vocab);
         vocabList.setAdapter(adapter);
-        vocabList.setLayoutManager(new LinearLayoutManager(getActivity()));*/
+        vocabList.setLayoutManager(new LinearLayoutManager(getActivity()));
         return rootView;
+    }
+    public void sort(){
+        Collections.sort(vocab, Collections.reverseOrder());
     }
    /* public void loadLanguageInfoFromDatabase(String langname) {
         DatabaseHelper mDbHelper = new DatabaseHelper(getActivity());

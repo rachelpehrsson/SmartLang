@@ -33,15 +33,13 @@ public class VocabAdapter extends RecyclerView.Adapter<VocabAdapter.ViewHolder> 
 
         }
     }
-    private List<String> wordList;
-    private List<String> defList;
+    private List<Vocab> wordList;
     // Store the context for easy access
     private Context mContext;
 
     // Pass in the contact array into the constructor
-    public VocabAdapter(Context context, List<String> words, List<String> defs) {
+    public VocabAdapter(Context context, List<Vocab> words) {
         wordList = words;
-        defList = defs;
         mContext = context;
     }
 
@@ -70,8 +68,8 @@ public class VocabAdapter extends RecyclerView.Adapter<VocabAdapter.ViewHolder> 
     @Override
     public void onBindViewHolder(VocabAdapter.ViewHolder viewHolder, int position) {
 
-        String word = wordList.get(position);
-        String def = defList.get(position);
+        String word = wordList.get(position).getWord();
+        String def = wordList.get(position).getDef();
         // Set item views based on your views and data model
         TextView wordView = viewHolder.word;
         wordView.setText(word);
