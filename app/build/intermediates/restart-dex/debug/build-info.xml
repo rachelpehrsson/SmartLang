@@ -6,7 +6,7 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1511947057402"
+    timestamp="1511947300991"
     token="-1040283977600714108"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -62,7 +62,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1511947057402"
+        timestamp="1511947300991"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\rhp8r\final-project-final-spearow\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
