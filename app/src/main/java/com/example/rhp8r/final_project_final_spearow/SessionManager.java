@@ -37,6 +37,8 @@ public class SessionManager {
     // Email address (make variable public to access from outside)
     public static final String KEY_PSWD = "password";
 
+    public HashMap<String, String> map = new HashMap<String, String>();
+
     // Constructor
     public SessionManager(Context context){
         this._context = context;
@@ -59,19 +61,20 @@ public class SessionManager {
 
     }
 
-    public HashMap<String, String> loadFromSharedPreferences() {
+    public void loadFromSharedPreferences() {
         // Add your code here to load
         //SharedPreferences settings = getSharedPreferences(PREF_NAME, 0);
-        String name = pref.getString("name", "none");
-        String password = pref.getString("password", "none");
+
 //        spnameTextView.setText(spname);
 //        spcompIDTextView.setText(spcompID);
 
-        HashMap<String, String> a = new HashMap<String, String>();
-        a.put(name, password);
+        //HashMap<String, String> a = new HashMap<String, String>();
+        //map.put(name, password);
 
-        return a;
+    }
 
+    public HashMap<String, String> getMap(){
+        return map;
     }
 
 
