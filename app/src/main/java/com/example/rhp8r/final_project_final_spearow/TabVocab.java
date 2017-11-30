@@ -14,8 +14,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class TabVocab extends Fragment {
+    public static final int ADD_WORD = 1;
+    public static final int EDIT_WORD = 2;
     RecyclerView vocabList;
     ArrayList<Vocab> vocab;
+    String lname;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -23,7 +27,7 @@ public class TabVocab extends Fragment {
 
         Intent intent = getActivity().getIntent();
         Bundle b = intent.getExtras();
-        String lname = b.getString("langName");
+        lname = b.getString("langName");
         vocabList = (RecyclerView) rootView.findViewById(R.id.vocabList);
         loadLanguageInfoFromDatabase(lname);
         VocabAdapter adapter = new VocabAdapter(getActivity(), vocab);
@@ -65,5 +69,32 @@ public class TabVocab extends Fragment {
             //Log.i("DBData");
         }
         cursor.close();
+    }
+
+    public void addVocab(View view) {
+        Intent intent1 = new Intent(getActivity(), AddVocab.class);
+        Bundle b = new Bundle();
+        b.putString("langname",lname);
+        intent1.putExtras(b);
+        startActivityForResult(intent1, ADD_WORD);
+    }
+    public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+        super.onActivityResult(requestCode, resultCode, intent);
+        Bundle b = intent.getExtras();
+        String lang = b.getString("newLang");
+        String word = b.getString("newWord");
+        String def = b.getString("newDef");
+        int rank = b.getInt("rank");
+        if (requestCode == ADD_WORD) {
+
+            Vocab newEntry = new Vocab(word, def, rank, lang);
+            vocab.add(newEntry);
+            vocabList.getAdapter().notifyDataSetChanged();
+            VocabAdapter adapter = new VocabAdapter(getActivity(), vocab);
+            vocabList.setAdapter(adapter);
+            vocabList.setLayoutManager(new LinearLayoutManager(getActivity()));
+        }
+
+
     }
 }

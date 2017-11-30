@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\rhp8r\final-project-final-spearow\app\src\main\AndroidManifest.xml:2:1-26:12
+ADDED from C:\Users\rhp8r\final-project-final-spearow\app\src\main\AndroidManifest.xml:2:1-28:12
 	package
 		ADDED from C:\Users\rhp8r\final-project-final-spearow\app\src\main\AndroidManifest.xml:3:5-60
 		INJECTED from C:\Users\rhp8r\final-project-final-spearow\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from C:\Users\rhp8r\final-project-final-spearow\app\src\main\AndroidManife
 		INJECTED from C:\Users\rhp8r\final-project-final-spearow\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\rhp8r\final-project-final-spearow\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\rhp8r\final-project-final-spearow\app\src\main\AndroidManifest.xml:5:5-24:19
+ADDED from C:\Users\rhp8r\final-project-final-spearow\app\src\main\AndroidManifest.xml:5:5-26:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\rhp8r\.android\build-cache\9ee682ffbdead2bc7164e839ee08a8db963ad866\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:25.3.1] C:\Users\rhp8r\.android\build-cache\d742234405feec863944311af67fc21382211b04\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\rhp8r\.android\build-cache\d151eac3fdce1eef1198f763194047bb575fcfca\output\AndroidManifest.xml:29:5-20
@@ -67,6 +67,12 @@ ADDED from C:\Users\rhp8r\final-project-final-spearow\app\src\main\AndroidManife
 		ADDED from C:\Users\rhp8r\final-project-final-spearow\app\src\main\AndroidManifest.xml:23:13-105
 	android:name
 		ADDED from C:\Users\rhp8r\final-project-final-spearow\app\src\main\AndroidManifest.xml:22:19-46
+activity#com.example.rhp8r.final_project_final_spearow.AddVocab
+ADDED from C:\Users\rhp8r\final-project-final-spearow\app\src\main\AndroidManifest.xml:24:9-25:105
+	android:parentActivityName
+		ADDED from C:\Users\rhp8r\final-project-final-spearow\app\src\main\AndroidManifest.xml:25:13-103
+	android:name
+		ADDED from C:\Users\rhp8r\final-project-final-spearow\app\src\main\AndroidManifest.xml:24:19-43
 uses-sdk
 INJECTED from C:\Users\rhp8r\final-project-final-spearow\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\rhp8r\.android\build-cache\9ee682ffbdead2bc7164e839ee08a8db963ad866\output\AndroidManifest.xml:5:5-7:41

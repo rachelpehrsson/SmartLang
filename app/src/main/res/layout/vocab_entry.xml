@@ -16,20 +16,27 @@
         android:layout_width="20dp"
         android:layout_weight="0.69"
         android:id="@+id/def"/>
-    <CheckBox
+    <RadioGroup
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_width="30dp"
-        android:layout_weight="0.20"
-        android:id="@+id/rank1"/>
-    <CheckBox
-        android:layout_height="wrap_content"
-        android:layout_width="30dp"
-        android:layout_weight="0.20"
-        android:id="@+id/rank2"/>
-    <CheckBox
-        android:layout_height="wrap_content"
-        android:layout_width="30dp"
-        android:layout_weight="0.20"
-        android:id="@+id/rank3"/>
+        android:id="@+id/ranks"
+        android:orientation="horizontal"
+        android:layout_below="@id/ques2">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rank0"
+            android:onClick="onRadioButtonClicked" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rank1"
+            android:onClick="onRadioButtonClicked" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rank2"
+            android:onClick="onRadioButtonClicked" />
+    </RadioGroup>
 
 </LinearLayout>

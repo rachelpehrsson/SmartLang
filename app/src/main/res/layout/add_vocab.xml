@@ -1,25 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Save a new word!"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp"
+        android:id="@+id/textView3" />
 
     <EditText
         android:id="@+id/word"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="First Vocab Word"
-        android:layout_marginBottom="35dp"
-        android:layout_above="@+id/def"
+        android:layout_marginTop="24dp"
+        android:text="New Language Word"
+        android:layout_below="@+id/textView3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
     <EditText
         android:id="@+id/def"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="First Vocab Definition"
-        android:layout_marginBottom="108dp"
-        android:layout_alignParentBottom="true"
+        android:text="Meaning in English"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="77dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ques2"
+        android:text="How well do you know this word?"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ranks"
+        android:layout_below="@id/ques2">
+        <RadioButton
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:id="@+id/rank0"
+            android:onClick="onRadioButtonClicked"
+            android:text = "Not Very Well"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rank1"
+            android:onClick="onRadioButtonClicked"
+            android:text = "Somewhat Well"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rank2"
+            android:onClick="onRadioButtonClicked"
+            android:text = "Very Well"/>
+    </RadioGroup>
 
-</LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/button5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
