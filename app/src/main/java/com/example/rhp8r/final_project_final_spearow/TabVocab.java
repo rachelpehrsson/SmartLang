@@ -20,11 +20,12 @@ public class TabVocab extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View rootView = inflater.inflate(R.layout.vocabtab, container, false);
+
         Intent intent = getActivity().getIntent();
         Bundle b = intent.getExtras();
-        String name = b.getString("langname");
+        String lname = b.getString("langName");
         vocabList = (RecyclerView) rootView.findViewById(R.id.vocabList);
-        loadLanguageInfoFromDatabase(name);
+        loadLanguageInfoFromDatabase(lname);
         VocabAdapter adapter = new VocabAdapter(getActivity(), vocab);
         vocabList.setAdapter(adapter);
         vocabList.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -44,7 +45,8 @@ public class TabVocab extends Fragment {
         };
         String sortOrder =
                 "";
-        String selection = "langname = "+langname;
+        String selection = "langname= "+langname;
+        //String[] selectionargs = {langname};
         Cursor cursor = db.query(
                 "vocabulary",  // The table to query
                 projection,                               // The columns to return

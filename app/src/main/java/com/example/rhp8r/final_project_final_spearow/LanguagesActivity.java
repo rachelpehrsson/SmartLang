@@ -142,15 +142,14 @@ public class LanguagesActivity extends AppCompatActivity {
         cursor.close();
     }
 
-    public void langSelect(View view) {
+   /* public void langSelect(View view) {
         Intent intent = new Intent(this, ChoicesActivity.class);
         startActivity(intent);
-    }
+    }*/
 
     public void sendMessage(View view) {
         //Intent intent2 = new Intent();
         Intent intent = new Intent(this, ChoicesActivity.class);
-        startActivity(intent);
         Button current = (Button) view;
         String currentname = current.getText().toString();
         Language selectedLang = new Language();
@@ -166,8 +165,8 @@ public class LanguagesActivity extends AppCompatActivity {
         b.putString("langName", selectedLang.getLname());
         /*b.putStringArrayList("langWords", selectedLang.getWordList());
         b.putStringArrayList("langDefs", selectedLang.getDefList());*/
-
-
+        intent.putExtras(b);
+        startActivity(intent);
     }
 
     public void addLanguage(View view) {
