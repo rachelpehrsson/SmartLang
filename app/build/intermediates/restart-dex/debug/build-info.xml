@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
-    api-level="22"
+    abi="x86"
+    api-level="26"
     build-mode="COLD"
-    density="tvdpi"
+    density="420dpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1512047561748"
+    timestamp="1512071737807"
     token="-5316324149980147285"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -23,36 +23,25 @@
         name="verifier"
         duration="0" />
 
+    <artifact
+        location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\outputs\apk\app-debug.apk"
+        type="SPLIT_MAIN" />
+
     <build
         build-mode="FULL"
-        timestamp="1512045588721"
+        timestamp="1512071676257"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
         <artifact
             location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
+        <artifact
+            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
@@ -61,23 +50,31 @@
             location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\outputs\apk\app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1512047205923"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\outputs\apk\app-debug.apk"
-            type="SPLIT_MAIN" />
+            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1512047561748"
-        verifier="COLD_SWAP_REQUESTED" />
+        timestamp="1512071737807"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
 
 </instant-run>

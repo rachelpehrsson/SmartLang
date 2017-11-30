@@ -10,9 +10,9 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Username (Enter 'test')"
+        android:layout_marginBottom="5dip"
         android:maxLines="1"
-        android:layout_marginBottom="5dip"/>
+        android:text="Username" />
 
     <!-- Email input text -->
     <EditText android:id="@+id/txtUsername"
