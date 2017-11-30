@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
+        "outputFile": "C:\\Users\\Shivani\\Documents\\cs4720\\final-project-final-spearow\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 117
                 },
                 "from": {
-                    "file": "C:\\Users\\rhp8r\\.android\\build-cache\\d151eac3fdce1eef1198f763194047bb575fcfca\\output\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "file": "C:\\Users\\Shivani\\.android\\build-cache\\f7ab7655e5393af3d84bb1d6578ab47ac0125f14\\output\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

@@ -33,6 +33,10 @@
         <activity
             android:name="com.example.rhp8r.final_project_final_spearow.AddLanguage"
             android:parentActivityName="com.example.rhp8r.final_project_final_spearow.LanguagesActivity" />
+        <activity
+            android:name="com.example.rhp8r.final_project_final_spearow.LoginActivity"
+            android:label="User Login" >
+        </activity>
     </application>
 
 </manifest>

@@ -1,6 +1,5 @@
 package com.example.rhp8r.final_project_final_spearow;
 
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

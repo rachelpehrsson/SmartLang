@@ -4,15 +4,20 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import android.widget.TextView;
+
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class LanguagesActivity extends AppCompatActivity {
     public static final int ADD_LANG = 1;
@@ -20,13 +25,47 @@ public class LanguagesActivity extends AppCompatActivity {
     ArrayList<String> langIDs;
     ArrayList<Language> languageList;
     RecyclerView rvItems;
+    SessionManager session;
+    AlertDialog alert;
+    Button btnLogout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_languages);
+        session = new SessionManager(getApplicationContext());
+        session.checkLogin();
+        TextView txtUsername = (TextView) findViewById(R.id.txtUsername);
+
+        HashMap<String, String> user = session.getUserDetails();
+
+        // name
+        String name = user.get(SessionManager.KEY_NAME);
+
+        // displaying user data
+        txtUsername.setText(Html.fromHtml("Name: <b>" + name + "</b>"));
+
+
+        /**
+         * Logout button click event
+         * */
+
+        btnLogout = (Button) findViewById(R.id.btnLogout);
+        btnLogout.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                // Clear the session data
+                // This will clear all session data and
+                // redirect user to LoginActivity
+                session.logoutUser();
+            }
+        });
+
         rvItems = (RecyclerView) findViewById(R.id.rvItems);
-        langIDs = new ArrayList<String>();
+        langIDs = new ArrayList<>();
+
+
         loadLanguagesFromDatabase();
         if (langIDs.size()==0){
             saveToDatabase("French");
@@ -39,6 +78,10 @@ public class LanguagesActivity extends AppCompatActivity {
         rvItems.setAdapter(adapter);
         rvItems.setLayoutManager(new LinearLayoutManager(this));
     }
+
+//    public void logout(){
+//        session.logoutUser();
+//    }
 
     public void saveToDatabase(String lang) {
         // Add code here to save to the database
@@ -57,35 +100,32 @@ public class LanguagesActivity extends AppCompatActivity {
 
 
     }
-    public void saveToDatabase(String lang, String word, String def) {
-        // Add code here to save to the database
-        DatabaseHelper mDbHelper = new DatabaseHelper(this);
-        SQLiteDatabase db = mDbHelper.getWritableDatabase();
-
-        // Create a new map of values, where column names are the keys
-        ContentValues values1 = new ContentValues();
-        ContentValues values2 = new ContentValues();
-        values1.put("langname", lang);
-        values2.put("word", word);
-        values2.put("translation", def);
-        values2.put("ranking", 0);
-        values2.put("langname", lang);
-
-        long newRowId1;
-        long newRowId2;
-        newRowId1 = db.insertWithOnConflict(
-                "languages",
-                null,
-                values1, SQLiteDatabase.CONFLICT_IGNORE);
-
-        newRowId2 = db.insertWithOnConflict(
-                "vocabulary",
-                null,
-                values2, SQLiteDatabase.CONFLICT_IGNORE);
-
-
-
-    }
+//    public void saveToDatabase(String lang, String word, String def) {
+//        // Add code here to save to the database
+//        DatabaseHelper mDbHelper = new DatabaseHelper(this);
+//        SQLiteDatabase db = mDbHelper.getWritableDatabase();
+//
+//        // Create a new map of values, where column names are the keys
+//        ContentValues values1 = new ContentValues();
+//        ContentValues values2 = new ContentValues();
+//        values1.put("langname", lang);
+//        values2.put("word", word);
+//        values2.put("translation", def);
+//        values2.put("ranking", 0);
+//        values2.put("langname", lang);
+//
+//        long newRowId1;
+//        long newRowId2;
+//        newRowId1 = db.insertWithOnConflict(
+//                "languages",
+//                null,
+//                values1, SQLiteDatabase.CONFLICT_IGNORE);
+//
+//        newRowId2 = db.insertWithOnConflict(
+//                "vocabulary",
+//                null,
+//                values2, SQLiteDatabase.CONFLICT_IGNORE);
+//    }
 
     public void loadLanguagesFromDatabase() {
         DatabaseHelper mDbHelper = new DatabaseHelper(this);
@@ -114,38 +154,38 @@ public class LanguagesActivity extends AppCompatActivity {
         }
         cursor.close();
     }
-    public void loadLanguageInfoFromDatabase(String langname) {
-        DatabaseHelper mDbHelper = new DatabaseHelper(this);
-        SQLiteDatabase db = mDbHelper.getWritableDatabase();
-
-        String[] projection = {
-                ""
-        };
-        String sortOrder =
-                "";
-        Cursor cursor = db.query(
-                "languages",  // The table to query
-                projection,                               // The columns to return
-                null,                                // The columns for the WHERE clause
-                null,                            // The values for the WHERE clause
-                null,                                     // don't group the rows
-                null,                                     // don't filter by row groups
-                sortOrder                                 // The sort order
-        );
-        String name = "";
-        while (cursor.moveToNext()) {
-            langIDs.add(cursor.getString(
-                    cursor.getColumnIndexOrThrow("langname")
-            ));
-            //Log.i("DBData");
-        }
-        cursor.close();
-    }
-
-   /* public void langSelect(View view) {
-        Intent intent = new Intent(this, ChoicesActivity.class);
-        startActivity(intent);
-    }*/
+//    public void loadLanguageInfoFromDatabase(String langname) {
+//        DatabaseHelper mDbHelper = new DatabaseHelper(this);
+//        SQLiteDatabase db = mDbHelper.getWritableDatabase();
+//
+//        String[] projection = {
+//                ""
+//        };
+//        String sortOrder =
+//                "";
+//        Cursor cursor = db.query(
+//                "languages",  // The table to query
+//                projection,                               // The columns to return
+//                null,                                // The columns for the WHERE clause
+//                null,                            // The values for the WHERE clause
+//                null,                                     // don't group the rows
+//                null,                                     // don't filter by row groups
+//                sortOrder                                 // The sort order
+//        );
+//        String name = "";
+//        while (cursor.moveToNext()) {
+//            langIDs.add(cursor.getString(
+//                    cursor.getColumnIndexOrThrow("langname")
+//            ));
+//            //Log.i("DBData");
+//        }
+//        cursor.close();
+//    }
+//
+//   /* public void langSelect(View view) {
+//        Intent intent = new Intent(this, ChoicesActivity.class);
+//        startActivity(intent);
+//    }*/
 
     public void sendMessage(View view) {
         //Intent intent2 = new Intent();
