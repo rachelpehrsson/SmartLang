@@ -45,7 +45,7 @@ public class TabVocab extends Fragment {
         };
         String sortOrder =
                 "";
-        String selection = "langname= "+langname;
+        String selection = "'langname= "+langname+"'";
         //String[] selectionargs = {langname};
         Cursor cursor = db.query(
                 "vocabulary",  // The table to query
@@ -56,6 +56,7 @@ public class TabVocab extends Fragment {
                 null,                                     // don't filter by row groups
                 sortOrder                                 // The sort order
         );
+        int count = cursor.getCount();
          vocab = new ArrayList();
         while (cursor.moveToNext()) {
             Vocab temp = new Vocab(cursor.getString(cursor.getColumnIndexOrThrow("word")), cursor.getString(cursor.getColumnIndexOrThrow("def")),
