@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\rhp8r\final-project-final-spearow\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\rhp8r\final-project-final-spearow\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_7d4bbe7ecffb27957fee5651891c22fde2c4857a\classes.dex" />
+        <dex dex="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_ae41bbc563814d779c1fd8f675e39cb3b6ed638b\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\rhp8r\final-project-final-spearow\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="9aaca7fb62fd898e5c99b89a6bc61c5800e804c3">
-        <dex dex="C:\Users\rhp8r\final-project-final-spearow\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_7f3cf727fe82d2cb6bb2a1817012e8fbaf0248a6\classes.dex" />
+        sha1="eca81a7c756d44aa121515ea4820eb0c2466b8a5">
+        <dex dex="C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_f8d2aaeb5784cc72fac10a7b012711e7284424fb\classes.dex" />
     </item>
 
 </items>

@@ -14,8 +14,6 @@ import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -23,6 +21,7 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
 
 import static android.app.Activity.RESULT_OK;
 
@@ -39,19 +38,20 @@ public class TabPic extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        //super.onCreate(savedInstanceState);
+        super.onCreateView(inflater, container, savedInstanceState);
         //getActivity().setContentView(R.layout.pictab);
         final View rootView = inflater.inflate(R.layout.pictab, container, false);
         takePictureButton = (Button) rootView.findViewById(R.id.takePictureButton);
         imageButton = (Button) rootView.findViewById(R.id.imageLibraryButton);
         imageView = (ImageView) rootView.findViewById(R.id.imageView);
+        //android.hardware.Camera camera = android.hardware.Camera.open();
 
         // We are giving you the code that checks for permissions
-        /*if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+        if (ContextCompat.checkSelfPermission(rootView.getContext(), android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             takePictureButton.setEnabled(false);
-            ActivityCompat.requestPermissions(this, new String[] { android.Manifest.permission.CAMERA, android.Manifest.permission.WRITE_EXTERNAL_STORAGE }, TAKE_PHOTO_PERMISSION);
-        }*/
-
+            ActivityCompat.requestPermissions(this.getActivity(), new String[] { android.Manifest.permission.CAMERA, android.Manifest.permission.WRITE_EXTERNAL_STORAGE }, TAKE_PHOTO_PERMISSION);
+        }
+//        takePictureButton.setEnabled(true);
         //Button button = (Button) view.findViewById(R.id.button1);
         takePictureButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,6 +88,7 @@ public class TabPic extends Fragment {
 //
     public void takePicture(View view) {
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+
         file = Uri.fromFile(getOutputMediaFile());
         intent.putExtra(MediaStore.EXTRA_OUTPUT, file);
 
