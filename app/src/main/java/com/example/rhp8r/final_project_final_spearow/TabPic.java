@@ -92,6 +92,7 @@ public class TabPic extends Fragment {
         file = Uri.fromFile(getOutputMediaFile());
         intent.putExtra(MediaStore.EXTRA_OUTPUT, file);
 
+
         startActivityForResult(intent, 100);
 
     }
@@ -111,7 +112,7 @@ public class TabPic extends Fragment {
 
         // Add code here to handle results from both taking a picture or pulling
         // from the image gallery.
-
+        super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_TAKE_PHOTO) {
             if (resultCode == RESULT_OK) {
                 imageView.setImageURI(file);
@@ -128,12 +129,11 @@ public class TabPic extends Fragment {
                     // Log.d(TAG, String.valueOf(bitmap));
 
                     ImageView imageView = (ImageView) getActivity().findViewById(R.id.imageView);
-                    imageView.setImageBitmap(bitmap);
+                    imageView.setImageURI(file);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-
         }
     }
 

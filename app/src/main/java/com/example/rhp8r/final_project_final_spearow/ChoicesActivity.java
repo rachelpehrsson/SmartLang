@@ -3,11 +3,16 @@ package com.example.rhp8r.final_project_final_spearow;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.fragment.*;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentStatePagerAdapter;
 
 
 public class ChoicesActivity extends AppCompatActivity {
@@ -48,6 +53,38 @@ public class ChoicesActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        super.onActivityResult(requestCode, resultCode, data);
+        //Fragment fragment = getSupportFragmentManager().findFragmentById(android.R.id.content);
+        //fragment.onActivityResult(requestCode, resultCode, data);
+//        boolean processed = true;
+//
+//        if (resultCode == this.RESULT_OK)
+//        {
+//            if (requestCode == 0) {
+//                // Something
+//            } else if (requestCode == 1) {
+//                // Something
+//            } else {
+//                processed = false;
+//            }
+//        } else { // Error
+//            if (requestCode == 0) {
+//                // Handle error
+//            } else {
+//                processed = false;
+//            }
+//        }
+//
+//        if (!processed) {
+//            this.onActivityResult(requestCode, resultCode, data);
+//            //fragment2.onActivityResult(requestCode, resultCode, data);
+//            super.onActivityResult(requestCode, resultCode, data);
+//        }
     }
 
     @Override
