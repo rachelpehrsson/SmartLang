@@ -25,7 +25,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table languages (langname varchar(25))");
         db.execSQL("create table vocabulary (word varchar(100), translation varchar(100), ranking int(10), langname varchar(25))");
-        db.execSQL("create table media (link varchar(100), langname varchar(25))");
+        db.execSQL("create table media (url varchar(100), label varchar(100), langname varchar(25))");
+        db.execSQL("create table photos (filename varchar(100), langname varchar(25))");
+        db.execSQL("create table audio (filename varchar(100), langname varchar(25))");
     }
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // This database is only a cache for online data, so its upgrade policy is
