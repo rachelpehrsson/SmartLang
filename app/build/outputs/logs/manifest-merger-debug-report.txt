@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:2:1-47:12
+ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:2:1-50:12
 	package
 		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:3:5-60
 		INJECTED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml
@@ -29,32 +29,44 @@ uses-permission#android.permission.CAMERA
 ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:8:5-65
 	android:name
 		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:8:22-62
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:9:5-79
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:9:5-71
 	android:name
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:9:22-76
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:10:5-81
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:9:22-68
+uses-permission#android.permission.CAPTURE_AUDIO_OUTPUT
+ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:10:22-78
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:10:22-76
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
 ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:11:5-80
 	android:name
 		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:11:22-77
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:12:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:13:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:14:5-80
+	android:name
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:14:22-77
 uses-feature#android.hardware.camera.any
-ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:13:5-15:35
+ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:16:5-18:35
 	android:required
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:15:9-32
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:18:9-32
 	android:name
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:14:9-51
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:17:9-51
 uses-feature#android.hardware.camera.autofocus
-ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:16:5-18:36
+ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:19:5-21:36
 	android:required
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:18:9-33
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:21:9-33
 	android:name
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:17:9-57
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:20:9-57
 application
-ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:20:5-45:19
+ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:23:5-48:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Shivani\.android\build-cache\afa25f0614cf5f087f80070bfa6d411a731fffc8\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:25.3.1] C:\Users\Shivani\.android\build-cache\4a22781c7f65d6a9630734cd024b2fa87f8e2aaf\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Shivani\.android\build-cache\f7ab7655e5393af3d84bb1d6578ab47ac0125f14\output\AndroidManifest.xml:29:5-20
@@ -68,57 +80,57 @@ MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Shivani\.andro
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Shivani\.android\build-cache\8e9ace866349541da6d06fb1e447520f738f8ec7\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Shivani\.android\build-cache\89d86ca69a01a66fbe719fa3aba61ed6818abd8d\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:23:9-41
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:26:9-41
 	android:supportsRtl
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:25:9-35
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:28:9-35
 	android:roundIcon
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:24:9-54
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:27:9-54
 	android:allowBackup
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:21:9-35
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:24:9-35
 	android:icon
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:22:9-43
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:25:9-43
 	android:theme
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:26:9-40
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:29:9-40
 activity#com.example.rhp8r.final_project_final_spearow.LanguagesActivity
-ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:27:9-33:20
+ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:30:9-36:20
 	android:name
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:27:19-52
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:30:19-52
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:28:13-32:29
+ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:31:13-35:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:29:17-69
+ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:29:25-66
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:31:17-77
+ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:31:27-74
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:34:27-74
 activity#com.example.rhp8r.final_project_final_spearow.ChoicesActivity
-ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:34:9-36:107
+ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:37:9-39:107
 	android:label
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:35:13-36
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:38:13-36
 	android:parentActivityName
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:36:13-105
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:39:13-105
 	android:name
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:34:19-50
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:37:19-50
 activity#com.example.rhp8r.final_project_final_spearow.AddLanguage
-ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:37:9-38:107
+ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:40:9-41:107
 	android:parentActivityName
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:38:13-105
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:41:13-105
 	android:name
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:37:19-46
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:40:19-46
 activity#com.example.rhp8r.final_project_final_spearow.AddVocab
-ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:39:9-40:105
+ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:42:9-43:105
 	android:parentActivityName
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:40:13-103
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:43:13-103
 	android:name
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:39:19-43
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:42:19-43
 activity#com.example.rhp8r.final_project_final_spearow.LoginActivity
-ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:41:9-44:20
+ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:44:9-47:20
 	android:label
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:43:13-39
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:46:13-39
 	android:name
-		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:42:13-42
+		ADDED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml:45:13-42
 uses-sdk
 INJECTED from C:\Users\Shivani\Documents\cs4720\final-project-final-spearow\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Shivani\.android\build-cache\afa25f0614cf5f087f80070bfa6d411a731fffc8\output\AndroidManifest.xml:5:5-7:41
