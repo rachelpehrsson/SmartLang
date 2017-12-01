@@ -55,6 +55,9 @@
             android:name="com.example.rhp8r.final_project_final_spearow.AddVocab"
             android:parentActivityName="com.example.rhp8r.final_project_final_spearow.ChoicesActivity" />
         <activity
+            android:name="com.example.rhp8r.final_project_final_spearow.AddLink"
+            android:parentActivityName="com.example.rhp8r.final_project_final_spearow.ChoicesActivity" />
+        <activity
             android:name="com.example.rhp8r.final_project_final_spearow.LoginActivity"
             android:label="User Login" >
         </activity>

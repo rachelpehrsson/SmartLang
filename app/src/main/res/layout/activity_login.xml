@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D1F2EB"
     android:orientation="vertical"
     android:padding="10dip">
 
@@ -36,15 +37,22 @@
         android:maxLines="1"/>
 
     <!-- Login button -->
-    <Button android:id="@+id/btnLogin"
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Login"/>
+        android:background="@android:color/holo_blue_bright"
+        android:text="Login"
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/btnsignup"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Sign up" />
+        android:background="@android:color/holo_blue_bright"
+        android:text="Sign up"
+        android:textColor="@color/colorPrimaryDark" />
 
 </LinearLayout>

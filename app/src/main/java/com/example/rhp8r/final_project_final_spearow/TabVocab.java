@@ -88,6 +88,11 @@ public class TabVocab extends Fragment {
         cursor.close();
     }
 
+    public void reshuffle(View view){
+
+
+    }
+
     public void saveToDatabase(String word, String def, int rank, String lang) {
         // Add code here to save to the database
         DatabaseHelper mDbHelper = new DatabaseHelper(getActivity());

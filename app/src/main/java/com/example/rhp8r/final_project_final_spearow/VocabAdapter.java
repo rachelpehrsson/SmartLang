@@ -84,7 +84,7 @@ public class VocabAdapter extends RecyclerView.Adapter<VocabAdapter.ViewHolder> 
                 }*/
                 //store the clicked radiobutton
                 lastCheckedRB = checked_rb;
-            }
+        }
         });
         if(lastCheckedRB != null) {
             if (lastCheckedRB.getId() == R.id.rank0) {
@@ -114,7 +114,7 @@ public class VocabAdapter extends RecyclerView.Adapter<VocabAdapter.ViewHolder> 
             viewHolder.itemView.setBackgroundColor(Color.parseColor("#F4D03F"));
         }
         if(wordList.get(position).getRank() == 2){
-            viewHolder.itemView.setBackgroundColor(Color.parseColor("#17A589"));
+            viewHolder.itemView.setBackgroundColor(Color.parseColor("#196F3D"));
         }
 
         /*if(!item.isOnline()) {
@@ -126,7 +126,7 @@ public class VocabAdapter extends RecyclerView.Adapter<VocabAdapter.ViewHolder> 
     }
 
     void update(){
-        Collections.sort(wordList);
+        //Collections.sort(wordList);
         notifyDataSetChanged();
     }
     /*public void onRadioButtonClicked(View view) {

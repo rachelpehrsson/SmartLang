@@ -3140,7 +3140,7 @@ containing a value of this type.
         public static final int beginning=0x7f0d003f;
         public static final int bottom=0x7f0d002e;
         public static final int btnLogin=0x7f0d0080;
-        public static final int btnLogout=0x7f0d007e;
+        public static final int btnLogout=0x7f0d007c;
         public static final int btnsignup=0x7f0d0081;
         public static final int button=0x7f0d0091;
         public static final int button2=0x7f0d0093;
@@ -3184,7 +3184,7 @@ containing a value of this type.
         public static final int fill_horizontal=0x7f0d003d;
         public static final int fill_vertical=0x7f0d0033;
         public static final int fixed=0x7f0d0046;
-        public static final int floatingActionButton=0x7f0d007d;
+        public static final int floatingActionButton=0x7f0d007e;
         public static final int home=0x7f0d0004;
         public static final int homeAsUp=0x7f0d001c;
         public static final int icon=0x7f0d0050;
@@ -3236,7 +3236,7 @@ containing a value of this type.
         public static final int right=0x7f0d0035;
         public static final int right_icon=0x7f0d00b8;
         public static final int right_side=0x7f0d00b4;
-        public static final int rvItems=0x7f0d007c;
+        public static final int rvItems=0x7f0d007d;
         public static final int screen=0x7f0d0028;
         public static final int scroll=0x7f0d0024;
         public static final int scrollIndicatorDown=0x7f0d005a;

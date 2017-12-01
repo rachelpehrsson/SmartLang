@@ -3,60 +3,73 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#E8F8F5">
     tools:context="com.example.rhp8r.final_project_final_spearow.LanguagesActivity">
+
     <TextView
         android:id="@+id/txtUsername"
         android:layout_width="593dp"
         android:layout_height="645dp"
         android:text="username"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#ff00ff"
+        android:textColor="@android:color/holo_blue_light"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
     <TextView
         android:id="@+id/testView"
         android:layout_width="593dp"
         android:layout_height="645dp"
-        android:text="Choose your Language:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#ff00ff"
-        android:layout_marginTop="42dp"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnLogout"
+        android:layout_marginTop="27dp"
+        android:fontFamily="monospace"
+        android:text="Choose your Language:"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
 
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvItems"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="88dp"
         android:layout_alignTop="@+id/testView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="64dp" />
+        android:layout_above="@+id/floatingActionButton" />
 
     <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="addLanguage"
-        android:layout_marginBottom="23dp"
-        android:id="@+id/floatingActionButton"
-        android:layout_marginRight="24dp"
-        android:layout_marginEnd="24dp"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:onClick="addLanguage"
+        app:backgroundTint="@android:color/holo_blue_bright" />
 
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="logout"
-        android:onClick="logout"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_green_light"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="logout"
+        android:text="logout"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
 
 </RelativeLayout>

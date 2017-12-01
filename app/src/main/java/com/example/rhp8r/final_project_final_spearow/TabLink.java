@@ -34,7 +34,7 @@ public class TabLink extends Fragment {
         linkList = (RecyclerView) rootView.findViewById(R.id.linkList);
         loadLanguageInfoFromDatabase(lname);
         LinkAdapter adapter = new LinkAdapter(getActivity(),links);
-        addButton = (FloatingActionButton) rootView.findViewById(R.id.add);
+        addButton = (FloatingActionButton) rootView.findViewById(R.id.addLink);
         linkList.setAdapter(adapter);
         linkList.setLayoutManager(new LinearLayoutManager(getActivity()));
         addButton.setOnClickListener(new View.OnClickListener() {

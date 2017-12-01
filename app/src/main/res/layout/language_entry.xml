@@ -10,6 +10,8 @@
         android:id="@+id/langSelect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:onClick="sendMessage"
         android:text=""
-        android:onClick="sendMessage"/>
+        android:textColor="@android:color/holo_blue_dark" />
 </LinearLayout>
