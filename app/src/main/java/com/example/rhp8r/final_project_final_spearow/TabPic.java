@@ -125,7 +125,7 @@ public class TabPic extends Fragment {
                 Uri uri = data.getData();
 
                 try {
-                    Bitmap bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), uri);
+                    Bitmap bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), file);
                     // Log.d(TAG, String.valueOf(bitmap));
 
                     ImageView imageView = (ImageView) getActivity().findViewById(R.id.imageView);

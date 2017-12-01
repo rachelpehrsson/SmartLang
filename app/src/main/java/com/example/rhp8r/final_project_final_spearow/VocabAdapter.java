@@ -10,9 +10,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Button;
+import android.graphics.Color;
 
+import java.util.Collections;
 import java.util.List;
 /**
  * Created by rhp8r on 9/4/2017.
@@ -23,6 +28,7 @@ public class VocabAdapter extends RecyclerView.Adapter<VocabAdapter.ViewHolder> 
 
         public TextView word;
         public TextView def;
+        public RadioGroup ranks;
 
 
         public ViewHolder(View itemView) {
@@ -30,12 +36,14 @@ public class VocabAdapter extends RecyclerView.Adapter<VocabAdapter.ViewHolder> 
 
             word = (TextView) itemView.findViewById(R.id.word);
             def = (TextView) itemView.findViewById(R.id.def);
-
+            ranks = (RadioGroup)itemView.findViewById(R.id.ranks);
         }
     }
     private List<Vocab> wordList;
     // Store the context for easy access
     private Context mContext;
+    private int rank;
+    private RadioButton lastCheckedRB = null;
 
     // Pass in the contact array into the constructor
     public VocabAdapter(Context context, List<Vocab> words) {
@@ -67,7 +75,30 @@ public class VocabAdapter extends RecyclerView.Adapter<VocabAdapter.ViewHolder> 
     }*/
     @Override
     public void onBindViewHolder(VocabAdapter.ViewHolder viewHolder, int position) {
-
+        viewHolder.ranks.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                RadioButton checked_rb = (RadioButton) group.findViewById(checkedId);
+                /*if (lastCheckedRB != null) {
+                    lastCheckedRB.setChecked(false);
+                }*/
+                //store the clicked radiobutton
+                lastCheckedRB = checked_rb;
+            }
+        });
+        if(lastCheckedRB != null) {
+            if (lastCheckedRB.getId() == R.id.rank0) {
+                wordList.get(position).setRank(0);
+            }
+            if (lastCheckedRB.getId() == R.id.rank1) {
+                wordList.get(position).setRank(1);
+            }
+            if (lastCheckedRB.getId() == R.id.rank2) {
+                wordList.get(position).setRank(2);
+            }
+            lastCheckedRB=null;
+            update();
+        }
         String word = wordList.get(position).getWord();
         String def = wordList.get(position).getDef();
         // Set item views based on your views and data model
@@ -75,6 +106,17 @@ public class VocabAdapter extends RecyclerView.Adapter<VocabAdapter.ViewHolder> 
         wordView.setText(word);
         TextView defView = viewHolder.def;
         defView.setText(def);
+
+        if(wordList.get(position).getRank() == 0){
+            viewHolder.itemView.setBackgroundColor(Color.parseColor("#CD6155"));
+        }
+        if(wordList.get(position).getRank() == 1){
+            viewHolder.itemView.setBackgroundColor(Color.parseColor("#F4D03F"));
+        }
+        if(wordList.get(position).getRank() == 2){
+            viewHolder.itemView.setBackgroundColor(Color.parseColor("#17A589"));
+        }
+
         /*if(!item.isOnline()) {
             textView.setClickable(false);
             textView.setActivated(false);
@@ -82,6 +124,31 @@ public class VocabAdapter extends RecyclerView.Adapter<VocabAdapter.ViewHolder> 
         }*/
 
     }
+
+    void update(){
+        Collections.sort(wordList);
+        notifyDataSetChanged();
+    }
+    /*public void onRadioButtonClicked(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+        lastCheckedRB = (RadioButton)view;
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            case R.id.rank0:
+                if (checked)
+                    rank = 0;
+            case R.id.rank1:
+                if (checked)
+                    rank = 1;
+                // Ninjas rule
+            case R.id.rank2:
+                if (checked)
+                    rank = 2;
+                // Ninjas rule
+        }
+        notifyDataSetChanged();
+    }*/
 
     // Returns the total count of items in the list
     @Override
