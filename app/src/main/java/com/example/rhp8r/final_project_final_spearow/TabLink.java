@@ -127,8 +127,8 @@ public class TabLink extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         super.onActivityResult(requestCode, resultCode, intent);
         Bundle b = intent.getExtras();
-        String url = b.getString("newLang");
-        String label = b.getString("newWord");
+        String url = b.getString("url");
+        String label = b.getString("label");
         if (requestCode == ADD_LINK) {
 
             Link newEntry = new Link(url, label, lname);

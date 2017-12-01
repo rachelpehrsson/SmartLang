@@ -42,6 +42,7 @@ public class AddVocab extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();

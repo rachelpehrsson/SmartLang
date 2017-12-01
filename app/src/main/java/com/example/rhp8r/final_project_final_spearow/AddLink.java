@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.support.v7.app.AppCompatActivity;
 /**
@@ -40,7 +41,7 @@ public class AddLink extends AppCompatActivity{
 
     }
     public void sendMessage(View view) {
-
+        Button current = (Button) view;
         Intent intent2 = new Intent();
         Bundle b = new Bundle();
         b.putString("url", url.getText().toString());

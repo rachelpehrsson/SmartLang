@@ -26,9 +26,9 @@ public class TabAdapter extends FragmentStatePagerAdapter {
             case 2:
                 TabAudio tab3 = new TabAudio();
                 return tab3;
-            case 3:
+          /*  case 3:
                 TabLink tab4 = new TabLink();
-                return tab4;
+                return tab4;*/
             default:
                 return null;
         }

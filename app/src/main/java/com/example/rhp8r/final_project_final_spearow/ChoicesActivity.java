@@ -28,7 +28,7 @@ public class ChoicesActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("Vocab"));
         tabLayout.addTab(tabLayout.newTab().setText("Pics"));
         tabLayout.addTab(tabLayout.newTab().setText("Audio"));
-        tabLayout.addTab(tabLayout.newTab().setText("Links"));
+        /*tabLayout.addTab(tabLayout.newTab().setText("Links"));*/
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         Intent intent = getIntent();
         Bundle b = intent.getExtras();
