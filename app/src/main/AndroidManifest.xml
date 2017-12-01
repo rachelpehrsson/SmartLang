@@ -21,6 +21,8 @@
             android:parentActivityName="com.example.rhp8r.final_project_final_spearow.LanguagesActivity"/>
         <activity android:name=".AddLanguage"
             android:parentActivityName="com.example.rhp8r.final_project_final_spearow.LanguagesActivity"/>
+        <activity android:name=".AddVocab"
+            android:parentActivityName="com.example.rhp8r.final_project_final_spearow.ChoicesActivity"/>
         <activity
             android:name=".LoginActivity"
             android:label="User Login" >
