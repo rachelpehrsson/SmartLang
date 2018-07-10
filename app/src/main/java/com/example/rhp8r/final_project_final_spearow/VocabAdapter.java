@@ -42,13 +42,15 @@ public class VocabAdapter extends RecyclerView.Adapter<VocabAdapter.ViewHolder> 
     private List<Vocab> wordList;
     // Store the context for easy access
     private Context mContext;
+    private TabVocab mFragment;
     private int rank;
     private RadioButton lastCheckedRB = null;
 
     // Pass in the contact array into the constructor
-    public VocabAdapter(Context context, List<Vocab> words) {
+    public VocabAdapter(Context context, List<Vocab> words, TabVocab fragment) {
         wordList = words;
         mContext = context;
+        mFragment = fragment;
     }
 
     // Easy access to the context object in the recyclerview
@@ -74,31 +76,33 @@ public class VocabAdapter extends RecyclerView.Adapter<VocabAdapter.ViewHolder> 
         boolean checked = ((CheckBox) view).isChecked();
     }*/
     @Override
-    public void onBindViewHolder(VocabAdapter.ViewHolder viewHolder, int position) {
+    public void onBindViewHolder(final VocabAdapter.ViewHolder viewHolder, final int position) {
         viewHolder.ranks.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 RadioButton checked_rb = (RadioButton) group.findViewById(checkedId);
+                if (checked_rb.getId() == R.id.rank0) {
+                    wordList.get(position).setRank(0);
+                    viewHolder.itemView.setBackgroundColor(Color.parseColor("#CD6155"));
+                }
+                if (checked_rb.getId() == R.id.rank1) {
+                    wordList.get(position).setRank(1);
+                    viewHolder.itemView.setBackgroundColor(Color.parseColor("#F4D03F"));
+                }
+                if (checked_rb.getId() == R.id.rank2) {
+                    wordList.get(position).setRank(2);
+                    viewHolder.itemView.setBackgroundColor(Color.parseColor("#196F3D"));
+                }
+                mFragment.sort();
+                notifyDataSetChanged();
+                //viewHolder.ranks.clearCheck(); //fix the clear check
                 /*if (lastCheckedRB != null) {
                     lastCheckedRB.setChecked(false);
                 }*/
                 //store the clicked radiobutton
-                lastCheckedRB = checked_rb;
         }
         });
-        if(lastCheckedRB != null) {
-            if (lastCheckedRB.getId() == R.id.rank0) {
-                wordList.get(position).setRank(0);
-            }
-            if (lastCheckedRB.getId() == R.id.rank1) {
-                wordList.get(position).setRank(1);
-            }
-            if (lastCheckedRB.getId() == R.id.rank2) {
-                wordList.get(position).setRank(2);
-            }
-            lastCheckedRB=null;
-            update();
-        }
+
         String word = wordList.get(position).getWord();
         String def = wordList.get(position).getDef();
         // Set item views based on your views and data model
@@ -125,10 +129,10 @@ public class VocabAdapter extends RecyclerView.Adapter<VocabAdapter.ViewHolder> 
 
     }
 
-    void update(){
+    /*void update(){
         //Collections.sort(wordList);
         notifyDataSetChanged();
-    }
+    }*/
     /*public void onRadioButtonClicked(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();

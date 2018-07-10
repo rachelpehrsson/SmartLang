@@ -72,7 +72,7 @@ public class AddVocab extends AppCompatActivity {
                 break;
             case R.id.rank2:
                 if (checked)
-                    rank = 3;
+                    rank = 2;
                 // Ninjas rule
                 break;
         }

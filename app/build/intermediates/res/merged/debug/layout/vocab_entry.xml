@@ -9,7 +9,6 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.69"
         android:fontFamily="serif-monospace"
-        android:onClick="editMessage"
         android:textSize="20dp"
         android:textStyle="bold" />
 
@@ -30,16 +29,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/rank0"
+
+
              />
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/rank1"
+
              />
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/rank2"
+
              />
     </RadioGroup>
 

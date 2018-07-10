@@ -80,7 +80,7 @@ MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\rhp8r\.android
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\rhp8r\.android\build-cache\e31b8794157d523585a4ef5130f9760b5d079d9b\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\rhp8r\.android\build-cache\cd6431e68d55fe9ed94bb56b1a80d16d29fcc387\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from C:\Users\rhp8r\final-project-final-spearow\app\src\main\AndroidManifest.xml:26:9-41
+		ADDED from C:\Users\rhp8r\final-project-final-spearow\app\src\main\AndroidManifest.xml:26:9-34
 	android:supportsRtl
 		ADDED from C:\Users\rhp8r\final-project-final-spearow\app\src\main\AndroidManifest.xml:28:9-35
 	android:roundIcon

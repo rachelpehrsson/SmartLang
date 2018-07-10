@@ -9,11 +9,15 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.LinearLayoutManager;
+import android.util.Log;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioButton;
+import android.view.Menu;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -36,10 +40,11 @@ public class TabVocab extends Fragment {
         lname = b.getString("langName");
         vocabList = (RecyclerView) rootView.findViewById(R.id.vocabList);
         loadLanguageInfoFromDatabase(lname);
-        VocabAdapter adapter = new VocabAdapter(getActivity(), vocab);
+        VocabAdapter adapter = new VocabAdapter(getActivity(), vocab, TabVocab.this);
         addButton = (FloatingActionButton) rootView.findViewById(R.id.addVocab);
         vocabList.setAdapter(adapter);
         vocabList.setLayoutManager(new LinearLayoutManager(getActivity()));
+        registerForContextMenu(vocabList);
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,12 +54,47 @@ public class TabVocab extends Fragment {
         sort();
         return rootView;
     }
+
+    /*public void update(){
+        sort();
+    }*/
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v,
+                                    ContextMenu.ContextMenuInfo menuInfo) {
+        if (v.getId()==R.id.vocabList) {
+            MenuInflater inflater = getActivity().getMenuInflater();
+            inflater.inflate(R.menu.vocab_menu,menu);
+            super.onCreateContextMenu(menu, v, menuInfo);
+        }
+    }
+
     public void sort(){
         Collections.sort(vocab);
         for(int i = 0;i<vocab.size();i++){
             saveToDatabase(vocab.get(i).getWord(),vocab.get(i).getDef(), vocab.get(i).getRank(),lname);
         }
     }
+
+   /*public void onRadioButtonClicked(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            case R.id.rank0:
+                if (checked)
+                    // Pirates are the best
+                    break;
+            case R.id.rank1:
+                if (checked)
+                    // Ninjas rule
+                    break;
+            case R.id.rank2:
+                if (checked)
+                    // Ninjas rule
+                    break;
+        }
+    }*/
     public void loadLanguageInfoFromDatabase(String langname) {
         DatabaseHelper mDbHelper = new DatabaseHelper(getActivity());
         SQLiteDatabase db = mDbHelper.getWritableDatabase();
@@ -80,21 +120,19 @@ public class TabVocab extends Fragment {
         int count = cursor.getCount();
          vocab = new ArrayList();
         while (cursor.moveToNext()) {
-            Vocab temp = new Vocab(cursor.getString(cursor.getColumnIndexOrThrow("word")), cursor.getString(cursor.getColumnIndexOrThrow("def")),
-                    cursor.getInt(cursor.getColumnIndexOrThrow("rank")),langname);
+            Vocab temp = new Vocab(cursor.getString(cursor.getColumnIndexOrThrow("word")), cursor.getString(cursor.getColumnIndexOrThrow("translation")),
+                    cursor.getInt(cursor.getColumnIndexOrThrow("ranking")),langname);
             vocab.add(temp);
             //Log.i("DBData");
         }
         cursor.close();
     }
 
-    public void reshuffle(View view){
 
-
-    }
-
-    public void saveToDatabase(String word, String def, int rank, String lang) {
+    public void saveToDatabase(final String word, final String def, final int rank, final String lang) {
         // Add code here to save to the database
+        new Thread(new Runnable() {
+            public void run() {
         DatabaseHelper mDbHelper = new DatabaseHelper(getActivity());
         SQLiteDatabase db = mDbHelper.getWritableDatabase();
 //
@@ -113,6 +151,9 @@ public class TabVocab extends Fragment {
                 "vocabulary",
                 null,
                 values2, SQLiteDatabase.CONFLICT_IGNORE);
+
+            }
+        }).start();
 
 
     }
@@ -137,7 +178,7 @@ public class TabVocab extends Fragment {
             vocab.add(newEntry);
             sort();
             vocabList.getAdapter().notifyDataSetChanged();
-            VocabAdapter adapter = new VocabAdapter(getActivity(), vocab);
+            VocabAdapter adapter = new VocabAdapter(getActivity(), vocab, this);
             vocabList.setAdapter(adapter);
             vocabList.setLayoutManager(new LinearLayoutManager(getActivity()));
         }

@@ -8,6 +8,10 @@
         "source": "C:\\Users\\rhp8r\\.android\\build-cache\\d742234405feec863944311af67fc21382211b04\\output\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
+        "merged": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\media_select.xml",
+        "source": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\src\\main\\res\\layout\\media_select.xml"
+    },
+    {
         "merged": "C:\\Users\\rhp8r\\final-project-final-spearow\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
         "source": "C:\\Users\\rhp8r\\.android\\build-cache\\d151eac3fdce1eef1198f763194047bb575fcfca\\output\\res\\layout\\abc_alert_dialog_material.xml"
     },
